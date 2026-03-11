@@ -1,0 +1,16 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Conceitos Fundamentais de IA",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-07-26",
+      "tags": ["IA", "Inteligência Artificial", "Fundamentos"],
+      "genres": ["IA", "Inteligência Artificial", "Fundamentos"],
+      "image": "67.webp",
+      "description": "Curso de conceitos fundamentais de Inteligência Artificial com carga horária de 1 hora. Certificação PRO pela Digital Innovation One.",
+      "featured": true
+    }
+  ],
+  "nextId": 2
+}

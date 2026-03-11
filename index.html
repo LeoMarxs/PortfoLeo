@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFoleo - Catálogo de Certificados</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --red: #e50914;
+            --red-dark: #b20710;
+            --dark: #0a0a0a;
+            --surface: #161616;
+            --surface2: #1e1e1e;
+            --surface3: #2a2a2a;
+            --border: #2e2e2e;
+            --text: #f0f0f0;
+            --text-muted: #888;
+            --text-dim: #555;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            background-color: var(--dark);
+            color: var(--text);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            min-height: 100vh;
+        }
+
+        /* ─── NAVBAR ─── */
+        .navbar {
+            background: rgba(10,10,10,0.97) !important;
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 0;
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-family: 'Bebas Neue', sans-serif;
+            color: var(--red) !important;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+
+        .nav-link {
+            color: var(--text-muted) !important;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            padding: 0.4rem 0.8rem !important;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--text) !important;
+            background: var(--surface2);
+        }
+
+        .btn-nav-add {
+            background: var(--red);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 0.45rem 1.1rem;
+            font-size: 0.88rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            transition: background 0.2s;
+        }
+
+        .btn-nav-add:hover { background: var(--red-dark); color: #fff; }
+
+        .dropdown-menu {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 0.5rem;
+        }
+
+        .dropdown-item {
+            color: var(--text-muted);
+            border-radius: 6px;
+            font-size: 0.88rem;
+            padding: 0.5rem 0.8rem;
+            transition: all 0.15s;
+        }
+
+        .dropdown-item:hover { background: var(--surface3); color: var(--text); }
+        .dropdown-item.text-danger:hover { background: rgba(229,9,20,0.12); color: var(--red); }
+        .dropdown-divider { border-color: var(--border); }
+
+        /* ─── HERO ─── */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(10,10,10,0.95) 0%, rgba(20,10,10,0.85) 100%),
+                        url('https://images.unsplash.com/photo-1574267432644-f65e5e2e8cb1?w=1920') center/cover no-repeat;
+            min-height: 420px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(255,255,255,0.012) 2px,
+                rgba(255,255,255,0.012) 4px
+            );
+            pointer-events: none;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 120px;
+            background: linear-gradient(to top, var(--dark), transparent);
+        }
+
+        .hero-content { position: relative; z-index: 1; }
+
+        .hero-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            letter-spacing: 4px;
+            line-height: 1;
+            color: #fff;
+        }
+
+        .hero-title span { color: var(--red); }
+
+        .hero-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-hero {
+            background: var(--red);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.2s;
+        }
+
+        .btn-hero:hover {
+            background: var(--red-dark);
+            color: #fff;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(229,9,20,0.4);
+        }
+
+        /* ─── STATS BAR ─── */
+        .stats-bar {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .stat-chip {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1rem 1.4rem;
+            min-width: 140px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .stat-chip:hover {
+            border-color: var(--red);
+            transform: translateY(-2px);
+        }
+
+        .stat-chip .stat-number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--red);
+            line-height: 1;
+        }
+
+        .stat-chip .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+
+        /* ─── SECTION HEADER ─── */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            position: relative;
+            margin: 0;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--red);
+            border-radius: 2px;
+        }
+
+        /* ─── SEARCH BAR ─── */
+        .search-bar {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-input-wrap {
+            flex: 1;
+            min-width: 220px;
+            position: relative;
+        }
+
+        .search-input-wrap i {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        .search-input {
+            width: 100%;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            padding: 0.55rem 0.9rem 0.55rem 2.4rem;
+            font-size: 0.9rem;
+            font-family: 'DM Sans', sans-serif;
+            transition: border-color 0.2s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--red);
+            background: var(--surface2);
+        }
+
+        .search-input::placeholder { color: var(--text-dim); }
+
+        .tag-filter-wrap {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .tag-filter-btn {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            border-radius: 20px;
+            padding: 0.3rem 0.9rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+
+        .tag-filter-btn:hover, .tag-filter-btn.active {
+            background: var(--red);
+            border-color: var(--red);
+            color: #fff;
+        }
+
+        /* ─── CARDS ─── */
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .cert-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.25s cubic-bezier(0.4,0,0.2,1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-6px);
+            border-color: #3a3a3a;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+        }
+
+        .cert-card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            display: block;
+        }
+
+        .cert-card-img:hover { opacity: 0.85; }
+
+        .cert-card-body {
+            padding: 1.2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cert-title {
+            font-weight: 600;
+            font-size: 0.98rem;
+            margin-bottom: 0.3rem;
+            line-height: 1.3;
+        }
+
+        .cert-meta {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-bottom: 0.7rem;
+        }
+
+        .cert-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .cert-tag {
+            background: var(--surface3);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            border-radius: 4px;
+            padding: 0.15rem 0.55rem;
+            font-size: 0.72rem;
+            font-weight: 500;
+        }
+
+        .cert-desc {
+            font-size: 0.83rem;
+            color: var(--text-muted);
+            flex: 1;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            margin-bottom: 1rem;
+        }
+
+        .cert-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn-action {
+            flex: 1;
+            padding: 0.4rem;
+            border-radius: 7px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid var(--border);
+            background: var(--surface2);
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .btn-action:hover { background: var(--surface3); color: var(--text); }
+        .btn-action.danger:hover { background: rgba(229,9,20,0.15); border-color: var(--red); color: var(--red); }
+        .btn-action.primary:hover { background: rgba(229,9,20,0.15); border-color: var(--red); color: var(--red); }
+
+        .featured-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--red);
+            color: #fff;
+            border-radius: 4px;
+            padding: 0.2rem 0.55rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .cert-card-img-wrap { position: relative; }
+
+        /* ─── EMPTY STATE ─── */
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-dim);
+        }
+
+        .empty-state i { font-size: 3rem; margin-bottom: 1rem; opacity: 0.4; }
+        .empty-state h4 { color: var(--text-muted); font-weight: 500; margin-bottom: 0.5rem; }
+        .empty-state p { font-size: 0.9rem; }
+
+        /* ─── PAGINATION ─── */
+        .pagination { gap: 0.3rem; }
+
+        .page-link {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            border-radius: 7px !important;
+            font-size: 0.85rem;
+            padding: 0.45rem 0.85rem;
+            transition: all 0.15s;
+        }
+
+        .page-link:hover { background: var(--surface2); color: var(--text); border-color: #444; }
+        .page-item.active .page-link { background: var(--red); border-color: var(--red); color: #fff; }
+        .page-item.disabled .page-link { opacity: 0.4; }
+
+        /* ─── CONTROLS ─── */
+        .form-select, .form-control {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            color: var(--text);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.88rem;
+            border-radius: 7px;
+        }
+
+        .form-select:focus, .form-control:focus {
+            background: var(--surface2);
+            color: var(--text);
+            border-color: var(--red);
+            box-shadow: 0 0 0 3px rgba(229,9,20,0.15);
+        }
+
+        .form-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            margin-bottom: 0.4rem;
+        }
+
+        /* ─── MODALS ─── */
+        .modal-content {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            color: var(--text);
+        }
+
+        .modal-header {
+            border-bottom: 1px solid var(--border);
+            padding: 1.2rem 1.5rem;
+        }
+
+        .modal-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 1.5px;
+        }
+
+        .modal-footer {
+            border-top: 1px solid var(--border);
+            padding: 1rem 1.5rem;
+        }
+
+        .btn-close-white { filter: invert(1) grayscale(1) brightness(2); }
+
+        .btn-save {
+            background: var(--red);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 0.55rem 1.5rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn-save:hover { background: var(--red-dark); color: #fff; }
+
+        .btn-cancel {
+            background: var(--surface2);
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.55rem 1.5rem;
+            font-weight: 500;
+        }
+
+        .btn-cancel:hover { background: var(--surface3); color: var(--text); }
+
+        /* ─── DETAIL MODAL ─── */
+        .detail-modal .modal-dialog { max-width: 1000px; }
+        .detail-modal .modal-header { border: none; padding-bottom: 0; }
+
+        .detail-img {
+            width: 100%;
+            max-height: 600px;
+            object-fit: contain;
+            border-radius: 10px;
+            background: #000;
+            display: block;
+        }
+
+        .detail-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+
+        .detail-meta { font-size: 0.88rem; color: var(--text-muted); }
+
+        /* ─── STATS MODAL ─── */
+        .stats-modal .modal-dialog { max-width: 750px; }
+
+        .chart-bar-wrap { margin-bottom: 0.8rem; }
+
+        .chart-bar-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-bottom: 0.3rem;
+        }
+
+        .chart-bar-track {
+            background: var(--surface3);
+            border-radius: 4px;
+            height: 8px;
+            overflow: hidden;
+        }
+
+        .chart-bar-fill {
+            height: 100%;
+            background: var(--red);
+            border-radius: 4px;
+            transition: width 0.6s cubic-bezier(0.4,0,0.2,1);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        @media (max-width: 576px) { .stats-grid { grid-template-columns: 1fr; } }
+
+        .stats-section-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* ─── TAG INPUT ─── */
+        .tags-input-container {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            padding: 0.4rem 0.7rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            min-height: 42px;
+            cursor: text;
+            transition: border-color 0.2s;
+        }
+
+        .tags-input-container:focus-within { border-color: var(--red); box-shadow: 0 0 0 3px rgba(229,9,20,0.15); }
+
+        .tag-pill {
+            background: var(--surface3);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 4px;
+            padding: 0.15rem 0.5rem;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .tag-pill-remove {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 0;
+            font-size: 0.75rem;
+            line-height: 1;
+            transition: color 0.15s;
+        }
+
+        .tag-pill-remove:hover { color: var(--red); }
+
+        .tags-text-input {
+            background: none;
+            border: none;
+            outline: none;
+            color: var(--text);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.88rem;
+            flex: 1;
+            min-width: 80px;
+        }
+
+        .tags-text-input::placeholder { color: var(--text-dim); }
+
+        /* ─── SHARE ─── */
+        .btn-share {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.15s;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .btn-share:hover { background: var(--surface3); color: var(--text); }
+
+        /* ─── STORAGE WARNING ─── */
+        .storage-warning {
+            background: rgba(229,9,20,0.1);
+            border: 1px solid rgba(229,9,20,0.3);
+            border-radius: 10px;
+            padding: 0.9rem 1.2rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.88rem;
+            color: #ff9999;
+        }
+
+        /* ─── TOAST ─── */
+        .toast-container { z-index: 9999; }
+
+        .toast {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+        }
+
+        .toast.success { border-left: 4px solid #22c55e; }
+        .toast.error { border-left: 4px solid var(--red); }
+
+        /* ─── IMAGE PREVIEW ─── */
+        #imagePreview img {
+            max-width: 100%;
+            max-height: 180px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        textarea.form-control { resize: vertical; }
+
+        /* ─── SCROLLBAR ─── */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--dark); }
+        ::-webkit-scrollbar-thumb { background: var(--surface3); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #444; }
+
+        /* ─── JSON LOADING INDICATOR ─── */
+        .json-loading {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .json-loading i { color: var(--red); margin-right: 0.5rem; }
+    </style>
+</head>
+<body>
+
+<!-- ─── NAVBAR ─── -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fas fa-film me-1"></i>PortFoleo</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center gap-1">
+                <li class="nav-item">
+                    <a class="nav-link" id="navHome" href="#" onclick="showHome(); return false;">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="navCatalog" href="#" onclick="showCatalog(); return false;">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showStats(); return false;"><i class="fas fa-chart-bar me-1"></i>Estatísticas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        <i class="fas fa-cog me-1"></i>Gerenciar
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="exportData(); return false;"><i class="fas fa-download me-2"></i>Exportar Dados</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="document.getElementById('importFile').click(); return false;"><i class="fas fa-upload me-2"></i>Importar Dados</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="reloadFromJson(); return false;"><i class="fas fa-sync me-2"></i>Recarregar JSON</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#" onclick="clearAllData(); return false;"><i class="fas fa-trash me-2"></i>Limpar Todos os Dados</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <button class="btn-nav-add ms-2" onclick="openAddModal()">
+                        <i class="fas fa-plus me-1"></i>Adicionar
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<input type="file" id="importFile" accept=".json" style="display:none;" onchange="importData(event)">
+
+<!-- ─── TOAST ─── -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="appToast" class="toast align-items-center border-0" role="alert">
+        <div class="d-flex">
+            <div class="toast-body" id="toastMsg">Salvo com sucesso!</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+</div>
+
+<!-- ─── HOME PAGE ─── -->
+<div id="homePage">
+    <div class="hero-section">
+        <div class="container hero-content">
+            <h1 class="hero-title">Port<span>Foleo</span></h1>
+            <p class="hero-subtitle mb-4">Sua coleção de certificados, organizada com estilo.</p>
+            <button class="btn-hero" onclick="showCatalog()">
+                Explorar Catálogo <i class="fas fa-arrow-right ms-2"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="storageWarning" class="storage-warning" style="display:none;">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            <strong>Atenção:</strong> O armazenamento está próximo do limite. <span id="storageUsage"></span>
+        </div>
+
+        <!-- Stats chips -->
+        <div class="stats-bar" id="statsBar"></div>
+
+        <!-- Featured -->
+        <div class="section-header">
+            <h2 class="section-title">Destaques</h2>
+            <a href="#" class="text-muted small" onclick="showCatalog(); return false;" style="text-decoration:none;">
+                Ver todos <i class="fas fa-arrow-right ms-1"></i>
+            </a>
+        </div>
+        <div id="featuredGrid" class="cert-grid"></div>
+    </div>
+</div>
+
+<!-- ─── CATALOG PAGE ─── -->
+<div id="catalogPage" style="display:none;">
+    <div class="container mt-4">
+        <div id="storageWarningCatalog" class="storage-warning" style="display:none;">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            <strong>Atenção:</strong> O armazenamento está próximo do limite. <span id="storageUsageCatalog"></span>
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-title">Catálogo</h2>
+            <div class="d-flex gap-2 align-items-center flex-wrap">
+                <select class="form-select w-auto" id="sortOrder" onchange="changeSortOrder()">
+                    <option value="date-desc">Mais recentes</option>
+                    <option value="date-asc">Mais antigos</option>
+                    <option value="name-asc">Nome (A-Z)</option>
+                    <option value="name-desc">Nome (Z-A)</option>
+                </select>
+                <select class="form-select w-auto" id="itemsPerPage" onchange="changeItemsPerPage()">
+                    <option value="9">9 por página</option>
+                    <option value="12">12 por página</option>
+                    <option value="18">18 por página</option>
+                    <option value="24">24 por página</option>
+                </select>
+                <span class="text-muted small" id="catalogTotal"></span>
+            </div>
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-bar">
+            <div class="search-input-wrap">
+                <i class="fas fa-search"></i>
+                <input type="text" class="search-input" id="searchInput" placeholder="Buscar por nome ou instituição..." oninput="onSearch()">
+            </div>
+            <div class="tag-filter-wrap" id="tagFilterWrap"></div>
+        </div>
+
+        <div id="catalogGrid" class="cert-grid"></div>
+        <nav><ul class="pagination justify-content-center" id="pagination"></ul></nav>
+    </div>
+</div>
+
+<!-- ─── MODAL: ADD/EDIT ─── -->
+<div class="modal fade" id="movieModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Adicionar Certificado</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="movieForm" novalidate>
+                    <input type="hidden" id="movieId">
+                    <div class="mb-3">
+                        <label class="form-label">Curso *</label>
+                        <input type="text" class="form-control" id="movieTitle" required placeholder="Nome do curso ou certificação">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Instituição *</label>
+                        <input type="text" class="form-control" id="movieDirector" required placeholder="Ex: Udemy, Coursera, FIAP...">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Data *</label>
+                        <input type="date" class="form-control" id="movieYear" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tags</label>
+                        <div class="tags-input-container" id="tagsContainer" onclick="document.getElementById('tagTextInput').focus()">
+                            <input type="text" class="tags-text-input" id="tagTextInput" placeholder="Digite e pressione Enter...">
+                        </div>
+                        <small class="text-muted" style="font-size:0.78rem;">Ex: Python, Back-end, IA — pressione Enter ou vírgula para adicionar</small>
+                        <div class="mt-2" id="tagSuggestions" style="display:none;"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Imagem do Certificado</label>
+                        <input type="file" class="form-control mb-2" id="movieImageUpload" accept="image/*" onchange="handleImageUpload(event)">
+                        <small class="text-muted" style="font-size:0.78rem;">Imagem comprimida automaticamente para otimizar armazenamento</small>
+                        <label class="form-label mt-2">Ou URL externa:</label>
+                        <input type="text" class="form-control" id="movieImage" placeholder="https://..." oninput="previewFromUrl()">
+                        <div id="imagePreview" style="display:none; margin-top:10px;">
+                            <img id="previewImg" alt="Preview">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Descrição *</label>
+                        <textarea class="form-control" id="movieDescription" rows="3" required placeholder="O que você aprendeu?"></textarea>
+                    </div>
+                    <div class="mb-1 form-check">
+                        <input type="checkbox" class="form-check-input" id="movieFeatured">
+                        <label class="form-check-label" for="movieFeatured" style="font-size:0.88rem; color:var(--text-muted);">Marcar como destaque</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn-save" onclick="saveMovie()">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ─── MODAL: DETAIL ─── -->
+<div class="modal fade detail-modal" id="movieDetailModal" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body pb-4">
+                <div class="row g-4">
+                    <div class="col-md-7">
+                        <img id="detailImage" class="detail-img" alt="">
+                    </div>
+                    <div class="col-md-5">
+                        <h2 id="detailTitle" class="detail-title mb-2"></h2>
+                        <p class="detail-meta mb-3">
+                            <i class="fas fa-building me-1"></i><span id="detailDirector"></span>
+                            &nbsp;·&nbsp;
+                            <i class="fas fa-calendar me-1"></i><span id="detailYear"></span>
+                        </p>
+                        <div id="detailTags" class="cert-tags mb-4"></div>
+                        <h6 class="text-muted mb-2" style="font-size:0.82rem; text-transform:uppercase; letter-spacing:1px;">Descrição</h6>
+                        <p id="detailDescription" style="font-size:0.92rem; color:var(--text-muted); line-height:1.7;"></p>
+                        <div class="d-flex gap-2 mt-4 flex-wrap">
+                            <button class="btn-action primary" style="flex:0 0 auto; padding: 0.5rem 1rem;" onclick="editMovieFromDetail()">
+                                <i class="fas fa-edit me-1"></i>Editar
+                            </button>
+                            <button class="btn-action" style="flex:0 0 auto; padding: 0.5rem 1rem;" onclick="shareFromDetail()">
+                                <i class="fas fa-share me-1"></i>Compartilhar
+                            </button>
+                            <button class="btn-action danger" style="flex:0 0 auto; padding: 0.5rem 1rem;" onclick="deleteMovieFromDetail()">
+                                <i class="fas fa-trash me-1"></i>Remover
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ─── MODAL: STATS ─── -->
+<div class="modal fade stats-modal" id="statsModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Estatísticas</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="statsBody"></div>
+        </div>
+    </div>
+</div>
+
+<!-- ─── MODAL: SHARE ─── -->
+<div class="modal fade" id="shareModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Compartilhar Certificado</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div id="sharePreviewWrap" style="margin-bottom:1.5rem;">
+                    <img id="sharePreviewImg" style="max-width:100%; max-height:300px; border-radius:10px; border:1px solid var(--border);" alt="">
+                </div>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <button class="btn-share" onclick="downloadShareImage()">
+                        <i class="fas fa-download"></i> Baixar Imagem
+                    </button>
+                    <button class="btn-share" onclick="copyShareText()">
+                        <i class="fas fa-copy"></i> Copiar Texto
+                    </button>
+                </div>
+                <p class="text-muted mt-3" style="font-size:0.8rem;" id="shareText"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    // ─── STATE ───
+    let movies = [];
+    let nextId = 1;
+    let currentPage = 'home';
+    let currentMovieDetailId = null;
+    let catalogCurrentPage = 1;
+    let itemsPerPage = 9;
+    let sortOrder = 'date-desc';
+    let searchQuery = '';
+    let activeTagFilter = null;
+    let currentTags = [];
+
+    // ─── NOME DO ARQUIVO JSON ───
+    // Altere aqui se renomear o arquivo certificates.json
+    const JSON_FILE = 'certificates.json';
+
+    // ─── TOAST ───
+    function showToast(msg, type = 'success') {
+        const toastEl = document.getElementById('appToast');
+        document.getElementById('toastMsg').textContent = msg;
+        toastEl.className = `toast align-items-center border-0 ${type}`;
+        bootstrap.Toast.getOrCreateInstance(toastEl, { delay: 2500 }).show();
+    }
+
+    // ─── IMAGE COMPRESSION ───
+    function compressImage(base64Image, maxWidth = 1200, quality = 0.72) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.onload = function () {
+                const canvas = document.createElement('canvas');
+                let w = img.width, h = img.height;
+                if (w > maxWidth) { h = (h * maxWidth) / w; w = maxWidth; }
+                canvas.width = w;
+                canvas.height = h;
+                canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+                resolve(canvas.toDataURL('image/jpeg', quality));
+            };
+            img.onerror = reject;
+            img.src = base64Image;
+        });
+    }
+
+    // ─── STORAGE ───
+    function checkStorageSpace() {
+        try {
+            const used = new Blob(Object.values(localStorage)).size;
+            const limit = 5 * 1024 * 1024;
+            const usedMB = (used / (1024 * 1024)).toFixed(2);
+            const pct = ((used / limit) * 100).toFixed(1);
+            ['storageWarning', 'storageWarningCatalog'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = pct > 80 ? 'block' : 'none';
+            });
+            ['storageUsage', 'storageUsageCatalog'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.textContent = `Usando ${usedMB}MB (${pct}% do limite)`;
+            });
+        } catch (e) {}
+    }
+
+    // ─── CARREGAR DO JSON ───
+    // Esta função busca o arquivo certificates.json e carrega os certificados.
+    // Se o localStorage já tiver dados salvos, usa eles (prioridade).
+    // Use "Gerenciar → Recarregar JSON" para forçar a leitura do JSON novamente.
+    async function loadMoviesFromStorage() {
+        try {
+            const saved = localStorage.getItem('portfoleo-certificates');
+            if (saved) {
+                // Dados já existem no localStorage, usa eles
+                const data = JSON.parse(saved);
+                movies = data.movies || [];
+                nextId = data.nextId || 1;
+            } else {
+                // Nenhum dado no localStorage → tenta carregar do JSON
+                await loadFromJsonFile();
+            }
+            checkStorageSpace();
+        } catch (e) {
+            console.error('Erro ao carregar dados:', e);
+            initializeDefaultData();
+        }
+    }
+
+    async function loadFromJsonFile() {
+        try {
+            const response = await fetch(JSON_FILE);
+            if (!response.ok) throw new Error(`Arquivo ${JSON_FILE} não encontrado (${response.status})`);
+            const data = await response.json();
+            if (!data.movies || !Array.isArray(data.movies)) throw new Error('Formato do JSON inválido');
+            movies = data.movies;
+            nextId = data.nextId || (movies.length + 1);
+            saveMoviesToStorage(); // salva no localStorage para próximas visitas
+            showToast(`${movies.length} certificado(s) carregado(s) do JSON!`);
+        } catch (e) {
+            console.warn('Não foi possível carregar o JSON:', e.message);
+            initializeDefaultData();
+        }
+    }
+
+    // Força recarregar do JSON (apaga localStorage e relê o arquivo)
+    async function reloadFromJson() {
+        if (!confirm('Isso vai substituir os dados atuais pelos do arquivo certificates.json. Continuar?')) return;
+        localStorage.removeItem('portfoleo-certificates');
+        movies = [];
+        nextId = 1;
+        await loadFromJsonFile();
+        refresh();
+    }
+
+    function saveMoviesToStorage() {
+        try {
+            const data = { movies, nextId, lastUpdate: new Date().toISOString() };
+            localStorage.setItem('portfoleo-certificates', JSON.stringify(data));
+            checkStorageSpace();
+            return true;
+        } catch (e) {
+            if (e.name === 'QuotaExceededError') {
+                showToast('Limite de armazenamento excedido! Use imagens menores ou URLs externas.', 'error');
+            } else {
+                showToast('Erro ao salvar: ' + e.message, 'error');
+            }
+            return false;
+        }
+    }
+
+    function initializeDefaultData() {
+        movies = [];
+        nextId = 1;
+        saveMoviesToStorage();
+    }
+
+    // ─── NAVIGATION ───
+    function showHome() {
+        document.getElementById('homePage').style.display = 'block';
+        document.getElementById('catalogPage').style.display = 'none';
+        currentPage = 'home';
+        document.getElementById('navHome').classList.add('active');
+        document.getElementById('navCatalog').classList.remove('active');
+        renderHome();
+    }
+
+    function showCatalog() {
+        document.getElementById('homePage').style.display = 'none';
+        document.getElementById('catalogPage').style.display = 'block';
+        currentPage = 'catalog';
+        catalogCurrentPage = 1;
+        document.getElementById('navHome').classList.remove('active');
+        document.getElementById('navCatalog').classList.add('active');
+        renderCatalog();
+    }
+
+    // ─── TAGS HELPERS ───
+    function getAllTags() {
+        const set = new Set();
+        movies.forEach(m => (m.tags || m.genres || []).forEach(t => set.add(t)));
+        return [...set].sort();
+    }
+
+    function formatDate(dateStr) {
+        if (!dateStr) return '';
+        const [y, m, d] = dateStr.split('-');
+        return `${d}/${m}/${y}`;
+    }
+
+    // ─── HOME RENDER ───
+    function renderHome() {
+        const tags = getAllTags();
+        const institutions = [...new Set(movies.map(m => m.director))];
+        const years = [...new Set(movies.map(m => m.year ? m.year.split('-')[0] : null).filter(Boolean))];
+
+        document.getElementById('statsBar').innerHTML = `
+            <div class="stat-chip" onclick="showCatalog()">
+                <div class="stat-number">${movies.length}</div>
+                <div class="stat-label">Certificados</div>
+            </div>
+            <div class="stat-chip" onclick="showStats()">
+                <div class="stat-number">${institutions.length}</div>
+                <div class="stat-label">Instituições</div>
+            </div>
+            <div class="stat-chip" onclick="showStats()">
+                <div class="stat-number">${tags.length}</div>
+                <div class="stat-label">Tags</div>
+            </div>
+            <div class="stat-chip" onclick="showStats()">
+                <div class="stat-number">${years.length}</div>
+                <div class="stat-label">Anos</div>
+            </div>
+        `;
+
+        const featured = movies.filter(m => m.featured);
+        if (featured.length === 0) {
+            document.getElementById('featuredGrid').innerHTML = `
+                <div class="empty-state" style="grid-column:1/-1;">
+                    <i class="fas fa-star"></i>
+                    <h4>Nenhum destaque ainda</h4>
+                    <p>Marque certificados como destaque ao adicionar ou editar.</p>
+                </div>`;
+        } else {
+            document.getElementById('featuredGrid').innerHTML = featured.map(createCard).join('');
+            attachCardEvents();
+        }
+    }
+
+    // ─── CATALOG RENDER ───
+    function renderCatalog() {
+        const tags = getAllTags();
+        const tagWrap = document.getElementById('tagFilterWrap');
+        tagWrap.innerHTML = `
+            <button class="tag-filter-btn ${activeTagFilter === null ? 'active' : ''}" onclick="setTagFilter(null)">Todos</button>
+            ${tags.map(t => `<button class="tag-filter-btn ${activeTagFilter === t ? 'active' : ''}" onclick="setTagFilter('${t.replace(/'/g, "\\'")}')">${t}</button>`).join('')}
+        `;
+
+        let filtered = movies.filter(m => {
+            const q = searchQuery.toLowerCase();
+            const matchSearch = !q ||
+                m.title.toLowerCase().includes(q) ||
+                m.director.toLowerCase().includes(q) ||
+                (m.description || '').toLowerCase().includes(q);
+            const matchTag = !activeTagFilter ||
+                (m.tags || m.genres || []).includes(activeTagFilter);
+            return matchSearch && matchTag;
+        });
+
+        filtered.sort((a, b) => {
+            switch (sortOrder) {
+                case 'date-desc': return (new Date(b.year || 0)) - (new Date(a.year || 0));
+                case 'date-asc':  return (new Date(a.year || 0)) - (new Date(b.year || 0));
+                case 'name-asc':  return a.title.localeCompare(b.title);
+                case 'name-desc': return b.title.localeCompare(a.title);
+                default: return 0;
+            }
+        });
+
+        const total = filtered.length;
+        document.getElementById('catalogTotal').textContent = `${total} resultado${total !== 1 ? 's' : ''}`;
+
+        const start = (catalogCurrentPage - 1) * itemsPerPage;
+        const paginated = filtered.slice(start, start + itemsPerPage);
+
+        if (paginated.length === 0) {
+            document.getElementById('catalogGrid').innerHTML = `
+                <div class="empty-state" style="grid-column:1/-1;">
+                    <i class="fas fa-search"></i>
+                    <h4>Nenhum resultado</h4>
+                    <p>Tente ajustar a busca ou os filtros.</p>
+                </div>`;
+        } else {
+            document.getElementById('catalogGrid').innerHTML = paginated.map(createCard).join('');
+            attachCardEvents();
+        }
+
+        renderPagination(total);
+    }
+
+    function createCard(movie) {
+        const tags = (movie.tags || movie.genres || []);
+        const tagHtml = tags.map(t => `<span class="cert-tag">${t}</span>`).join('');
+        const dateStr = formatDate(movie.year);
+        const imgSrc = movie.image || 'https://via.placeholder.com/400x220?text=Sem+Imagem';
+
+        return `
+            <div class="cert-card">
+                <div class="cert-card-img-wrap">
+                    <img src="${imgSrc}" alt="${movie.title}" class="cert-card-img movie-image-clickable" data-movie-id="${movie.id}">
+                    ${movie.featured ? '<span class="featured-badge"><i class="fas fa-star me-1"></i>Destaque</span>' : ''}
+                </div>
+                <div class="cert-card-body">
+                    <div class="cert-title">${movie.title}</div>
+                    <div class="cert-meta"><i class="fas fa-building me-1"></i>${movie.director} · ${dateStr}</div>
+                    <div class="cert-tags">${tagHtml}</div>
+                    <div class="cert-desc">${movie.description}</div>
+                    <div class="cert-actions">
+                        <button class="btn-action primary" onclick="editMovie(${movie.id})"><i class="fas fa-edit me-1"></i>Editar</button>
+                        <button class="btn-action" onclick="openShareModal(${movie.id})"><i class="fas fa-share me-1"></i></button>
+                        <button class="btn-action danger" onclick="deleteMovie(${movie.id})"><i class="fas fa-trash me-1"></i></button>
+                    </div>
+                </div>
+            </div>`;
+    }
+
+    function attachCardEvents() {
+        document.querySelectorAll('.movie-image-clickable').forEach(img => {
+            img.addEventListener('click', function () {
+                showMovieDetail(parseInt(this.getAttribute('data-movie-id')));
+            });
+        });
+    }
+
+    // ─── PAGINATION ───
+    function renderPagination(total) {
+        const totalPages = Math.ceil(total / itemsPerPage);
+        const pag = document.getElementById('pagination');
+        if (totalPages <= 1) { pag.innerHTML = ''; return; }
+
+        let html = `<li class="page-item ${catalogCurrentPage === 1 ? 'disabled' : ''}">
+            <a class="page-link" href="#" onclick="goToPage(${catalogCurrentPage - 1}); return false;">‹</a></li>`;
+
+        const max = 5;
+        let s = Math.max(1, catalogCurrentPage - 2);
+        let e = Math.min(totalPages, s + max - 1);
+        if (e - s < max - 1) s = Math.max(1, e - max + 1);
+
+        if (s > 1) html += `<li class="page-item"><a class="page-link" href="#" onclick="goToPage(1); return false;">1</a></li>${s > 2 ? '<li class="page-item disabled"><span class="page-link">…</span></li>' : ''}`;
+        for (let i = s; i <= e; i++)
+            html += `<li class="page-item ${i === catalogCurrentPage ? 'active' : ''}"><a class="page-link" href="#" onclick="goToPage(${i}); return false;">${i}</a></li>`;
+        if (e < totalPages) html += `${e < totalPages - 1 ? '<li class="page-item disabled"><span class="page-link">…</span></li>' : ''}<li class="page-item"><a class="page-link" href="#" onclick="goToPage(${totalPages}); return false;">${totalPages}</a></li>`;
+
+        html += `<li class="page-item ${catalogCurrentPage === totalPages ? 'disabled' : ''}">
+            <a class="page-link" href="#" onclick="goToPage(${catalogCurrentPage + 1}); return false;">›</a></li>`;
+        pag.innerHTML = html;
+    }
+
+    function goToPage(page) {
+        const totalPages = Math.ceil(movies.length / itemsPerPage);
+        if (page < 1 || page > totalPages) return;
+        catalogCurrentPage = page;
+        renderCatalog();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function changeSortOrder() { sortOrder = document.getElementById('sortOrder').value; catalogCurrentPage = 1; renderCatalog(); }
+    function changeItemsPerPage() { itemsPerPage = parseInt(document.getElementById('itemsPerPage').value); catalogCurrentPage = 1; renderCatalog(); }
+
+    // ─── SEARCH & FILTER ───
+    function onSearch() {
+        searchQuery = document.getElementById('searchInput').value;
+        catalogCurrentPage = 1;
+        renderCatalog();
+    }
+
+    function setTagFilter(tag) {
+        activeTagFilter = tag;
+        catalogCurrentPage = 1;
+        renderCatalog();
+    }
+
+    // ─── TAGS INPUT ───
+    function initTagsInput() {
+        const input = document.getElementById('tagTextInput');
+        input.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ',') {
+                e.preventDefault();
+                const val = this.value.trim().replace(/,$/, '');
+                if (val) addTag(val);
+                this.value = '';
+            } else if (e.key === 'Backspace' && !this.value && currentTags.length) {
+                removeTag(currentTags[currentTags.length - 1]);
+            }
+        });
+    }
+
+    function addTag(val) {
+        const clean = val.trim();
+        if (!clean || currentTags.includes(clean)) return;
+        currentTags.push(clean);
+        renderTagPills();
+    }
+
+    function removeTag(val) {
+        currentTags = currentTags.filter(t => t !== val);
+        renderTagPills();
+    }
+
+    function renderTagPills() {
+        const container = document.getElementById('tagsContainer');
+        const input = document.getElementById('tagTextInput');
+        container.innerHTML = '';
+        currentTags.forEach(t => {
+            const pill = document.createElement('span');
+            pill.className = 'tag-pill';
+            pill.innerHTML = `${t}<button class="tag-pill-remove" onclick="removeTag('${t.replace(/'/g, "\\'")}')" type="button">✕</button>`;
+            container.appendChild(pill);
+        });
+        container.appendChild(input);
+
+        const existing = getAllTags().filter(t => !currentTags.includes(t));
+        const sugEl = document.getElementById('tagSuggestions');
+        if (existing.length) {
+            sugEl.style.display = 'flex';
+            sugEl.style.flexWrap = 'wrap';
+            sugEl.style.gap = '0.3rem';
+            sugEl.innerHTML = `<span style="font-size:0.75rem;color:var(--text-dim);align-self:center;">Sugestões:</span>` +
+                existing.slice(0, 8).map(t => `<button type="button" class="tag-filter-btn" style="font-size:0.75rem; padding:0.2rem 0.6rem;" onclick="addTag('${t.replace(/'/g, "\\'")}'); this.remove();">${t}</button>`).join('');
+        } else {
+            sugEl.style.display = 'none';
+        }
+    }
+
+    // ─── ADD/EDIT MODAL ───
+    function openAddModal() {
+        document.getElementById('modalTitle').textContent = 'Adicionar Certificado';
+        document.getElementById('movieForm').reset();
+        document.getElementById('movieId').value = '';
+        document.getElementById('imagePreview').style.display = 'none';
+        document.getElementById('movieImageUpload').value = '';
+        currentTags = [];
+        renderTagPills();
+        new bootstrap.Modal(document.getElementById('movieModal')).show();
+    }
+
+    function editMovie(id) {
+        const movie = movies.find(m => m.id === id);
+        if (!movie) return;
+        document.getElementById('modalTitle').textContent = 'Editar Certificado';
+        document.getElementById('movieId').value = movie.id;
+        document.getElementById('movieTitle').value = movie.title;
+        document.getElementById('movieDirector').value = movie.director;
+        document.getElementById('movieYear').value = movie.year;
+        document.getElementById('movieImage').value = movie.image || '';
+        document.getElementById('movieDescription').value = movie.description;
+        document.getElementById('movieFeatured').checked = movie.featured;
+        if (movie.image) {
+            document.getElementById('previewImg').src = movie.image;
+            document.getElementById('imagePreview').style.display = 'block';
+        } else {
+            document.getElementById('imagePreview').style.display = 'none';
+        }
+        document.getElementById('movieImageUpload').value = '';
+        currentTags = [...(movie.tags || movie.genres || [])];
+        renderTagPills();
+        new bootstrap.Modal(document.getElementById('movieModal')).show();
+    }
+
+    async function handleImageUpload(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        if (!file.type.startsWith('image/')) { showToast('Selecione apenas arquivos de imagem.', 'error'); event.target.value = ''; return; }
+        if (file.size > 10 * 1024 * 1024) { showToast('A imagem deve ter no máximo 10MB.', 'error'); event.target.value = ''; return; }
+        const reader = new FileReader();
+        reader.onload = async function (e) {
+            try {
+                const compressed = await compressImage(e.target.result);
+                document.getElementById('movieImage').value = compressed;
+                document.getElementById('previewImg').src = compressed;
+                document.getElementById('imagePreview').style.display = 'block';
+            } catch { showToast('Erro ao processar imagem.', 'error'); }
+        };
+        reader.readAsDataURL(file);
+    }
+
+    function previewFromUrl() {
+        const url = document.getElementById('movieImage').value.trim();
+        if (url) {
+            document.getElementById('previewImg').src = url;
+            document.getElementById('imagePreview').style.display = 'block';
+        } else {
+            document.getElementById('imagePreview').style.display = 'none';
+        }
+    }
+
+    function saveMovie() {
+        const form = document.getElementById('movieForm');
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        const movieImage = document.getElementById('movieImage').value.trim();
+        if (!movieImage) { showToast('Adicione uma imagem (upload ou URL).', 'error'); return; }
+
+        const id = document.getElementById('movieId').value;
+        const movieData = {
+            title: document.getElementById('movieTitle').value.trim(),
+            director: document.getElementById('movieDirector').value.trim(),
+            year: document.getElementById('movieYear').value,
+            tags: [...currentTags],
+            genres: [...currentTags],
+            image: movieImage,
+            description: document.getElementById('movieDescription').value.trim(),
+            featured: document.getElementById('movieFeatured').checked
+        };
+
+        if (id) {
+            const idx = movies.findIndex(m => m.id === parseInt(id));
+            if (idx !== -1) movies[idx] = { ...movies[idx], ...movieData };
+        } else {
+            movies.push({ id: nextId++, ...movieData });
+        }
+
+        if (!saveMoviesToStorage()) {
+            if (!id) { movies.pop(); nextId--; } else loadMoviesFromStorage();
+            return;
+        }
+
+        bootstrap.Modal.getInstance(document.getElementById('movieModal')).hide();
+        showToast(id ? 'Certificado atualizado!' : 'Certificado adicionado!');
+        refresh();
+    }
+
+    function deleteMovie(id) {
+        if (!confirm('Tem certeza que deseja remover este certificado?')) return;
+        movies = movies.filter(m => m.id !== id);
+        saveMoviesToStorage();
+        showToast('Certificado removido.');
+        refresh();
+    }
+
+    function refresh() {
+        if (currentPage === 'home') renderHome();
+        else renderCatalog();
+    }
+
+    // ─── DETAIL MODAL ───
+    function showMovieDetail(id) {
+        const movie = movies.find(m => m.id === id);
+        if (!movie) return;
+        currentMovieDetailId = id;
+
+        const tags = (movie.tags || movie.genres || []);
+        document.getElementById('detailImage').src = movie.image || '';
+        document.getElementById('detailTitle').textContent = movie.title;
+        document.getElementById('detailDirector').textContent = movie.director;
+        document.getElementById('detailYear').textContent = formatDate(movie.year);
+        document.getElementById('detailTags').innerHTML = tags.map(t => `<span class="cert-tag">${t}</span>`).join('');
+        document.getElementById('detailDescription').textContent = movie.description;
+
+        new bootstrap.Modal(document.getElementById('movieDetailModal')).show();
+    }
+
+    function editMovieFromDetail() {
+        bootstrap.Modal.getInstance(document.getElementById('movieDetailModal')).hide();
+        setTimeout(() => editMovie(currentMovieDetailId), 300);
+    }
+
+    function deleteMovieFromDetail() {
+        bootstrap.Modal.getInstance(document.getElementById('movieDetailModal')).hide();
+        setTimeout(() => deleteMovie(currentMovieDetailId), 300);
+    }
+
+    function shareFromDetail() {
+        bootstrap.Modal.getInstance(document.getElementById('movieDetailModal')).hide();
+        setTimeout(() => openShareModal(currentMovieDetailId), 300);
+    }
+
+    // ─── SHARE ───
+    function openShareModal(id) {
+        const movie = movies.find(m => m.id === id);
+        if (!movie) return;
+        currentMovieDetailId = id;
+        document.getElementById('sharePreviewImg').src = movie.image || '';
+        document.getElementById('shareText').textContent =
+            `🎓 ${movie.title} — ${movie.director} (${formatDate(movie.year)})`;
+        new bootstrap.Modal(document.getElementById('shareModal')).show();
+    }
+
+    function downloadShareImage() {
+        const movie = movies.find(m => m.id === currentMovieDetailId);
+        if (!movie || !movie.image) { showToast('Nenhuma imagem para baixar.', 'error'); return; }
+        const a = document.createElement('a');
+        a.href = movie.image;
+        a.download = `${movie.title.replace(/\s+/g, '_')}_certificado.jpg`;
+        a.click();
+        showToast('Download iniciado!');
+    }
+
+    function copyShareText() {
+        const movie = movies.find(m => m.id === currentMovieDetailId);
+        if (!movie) return;
+        const text = `🎓 Acabei de concluir: ${movie.title}\n🏫 Instituição: ${movie.director}\n📅 ${formatDate(movie.year)}\n#PortFoleo #Certificado`;
+        navigator.clipboard.writeText(text).then(() => showToast('Texto copiado!')).catch(() => showToast('Erro ao copiar.', 'error'));
+    }
+
+    // ─── STATISTICS ───
+    function showStats() {
+        const body = document.getElementById('statsBody');
+
+        const instCount = {};
+        movies.forEach(m => { instCount[m.director] = (instCount[m.director] || 0) + 1; });
+        const instSorted = Object.entries(instCount).sort((a, b) => b[1] - a[1]);
+
+        const yearCount = {};
+        movies.forEach(m => {
+            if (m.year) {
+                const y = m.year.split('-')[0];
+                yearCount[y] = (yearCount[y] || 0) + 1;
+            }
+        });
+        const yearSorted = Object.entries(yearCount).sort((a, b) => b[0] - a[0]);
+
+        const tagCount = {};
+        movies.forEach(m => (m.tags || m.genres || []).forEach(t => { tagCount[t] = (tagCount[t] || 0) + 1; }));
+        const tagSorted = Object.entries(tagCount).sort((a, b) => b[1] - a[1]);
+
+        const maxInst = instSorted[0]?.[1] || 1;
+        const maxYear = yearSorted.reduce((m, e) => Math.max(m, e[1]), 1);
+        const maxTag = tagSorted[0]?.[1] || 1;
+
+        function barSection(title, data, max) {
+            if (!data.length) return `<p class="text-muted small">Sem dados.</p>`;
+            return `<p class="stats-section-title">${title}</p>` +
+                data.slice(0, 10).map(([label, count]) => `
+                    <div class="chart-bar-wrap">
+                        <div class="chart-bar-label"><span>${label}</span><span>${count}</span></div>
+                        <div class="chart-bar-track"><div class="chart-bar-fill" style="width:${(count/max*100).toFixed(1)}%"></div></div>
+                    </div>`).join('');
+        }
+
+        body.innerHTML = `
+            <div class="stats-grid">
+                <div>${barSection('Por Instituição', instSorted, maxInst)}</div>
+                <div>${barSection('Por Ano', yearSorted, maxYear)}</div>
+            </div>
+            <div class="mt-3">${barSection('Por Tag/Área', tagSorted, maxTag)}</div>
+        `;
+
+        new bootstrap.Modal(document.getElementById('statsModal')).show();
+    }
+
+    // ─── EXPORT / IMPORT / CLEAR ───
+    function exportData() {
+        const blob = new Blob([JSON.stringify({ movies, nextId, exportDate: new Date().toISOString() }, null, 2)], { type: 'application/json' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = `portfoleo-backup-${new Date().toISOString().split('T')[0]}.json`;
+        a.click();
+        URL.revokeObjectURL(a.href);
+        showToast('Dados exportados!');
+    }
+
+    function importData(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            try {
+                const data = JSON.parse(e.target.result);
+                if (!data.movies || !Array.isArray(data.movies)) throw new Error('Formato inválido');
+                if (!confirm(`Importar ${data.movies.length} certificados? Isso substituirá os dados atuais.`)) return;
+                movies = data.movies;
+                nextId = data.nextId || movies.length + 1;
+                if (saveMoviesToStorage()) { refresh(); showToast(`${movies.length} certificados importados!`); }
+            } catch { showToast('Erro ao importar arquivo.', 'error'); }
+        };
+        reader.readAsText(file);
+        event.target.value = '';
+    }
+
+    function clearAllData() {
+        if (!confirm('ATENÇÃO: Isso vai remover TODOS os certificados. Esta ação não pode ser desfeita.')) return;
+        if (!confirm('Tem certeza absoluta? Recomendamos exportar seus dados antes.')) return;
+        localStorage.removeItem('portfoleo-certificates');
+        movies = []; nextId = 1;
+        initializeDefaultData();
+        refresh();
+        showToast('Todos os dados foram removidos.');
+    }
+
+    // ─── INIT ───
+    async function init() {
+        await loadMoviesFromStorage();
+        initTagsInput();
+        showHome();
+    }
+
+    init();
+</script>
+</body>
+</html>
