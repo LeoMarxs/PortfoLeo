@@ -2,21 +2,13 @@
   "movies": [
     {
       "id": 1,
-      "title": "Conceitos Fundamentais de IA",
+      "title": "Bootcaps DIO: Educação Gratuita e Empregabilidade Juntas!",
       "director": "Digital Innovation One (DIO)",
-      "year": "2024-07-26",
-      "tags": [
-        "IA",
-        "Inteligência Artificial",
-        "Fundamentos"
-      ],
-      "genres": [
-        "IA",
-        "Inteligência Artificial",
-        "Fundamentos"
-      ],
+      "year": "2024-04-10",
+      "tags": [],
+      "genres": [],
       "image": "certificados/2.webp",
-      "description": "Curso de conceitos fundamentais de Inteligência Artificial com carga horária de 1 hora.",
+      "description": "carga horária de 1 hora.",
       "featured": true
     },
     {
