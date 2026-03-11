@@ -7,7 +7,7 @@
       "year": "2024-07-26",
       "tags": ["IA", "Inteligência Artificial", "Fundamentos"],
       "genres": ["IA", "Inteligência Artificial", "Fundamentos"],
-      "image": "/certificados/2.webp",
+      "image": "certificados/2.webp",
       "description": "Curso de conceitos fundamentais de IA com carga horária de 1 hora.",
       "featured": true
     },
@@ -18,10 +18,11 @@
       "year": "2024-08-10",
       "tags": ["Python", "Back-end"],
       "genres": ["Python", "Back-end"],
-      "image": "/certificados/3.webp",
+      "image": "certificados/3.webp",
       "description": "Descrição do que você aprendeu.",
       "featured": false
     }
   ],
   "nextId": 3
+
 }
