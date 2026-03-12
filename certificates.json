@@ -167,7 +167,7 @@
     },
     {
       "id": 16,
-      "title": "Exceções e Coleções cem C#",
+      "title": "Exceções e Coleções em C#",
       "director": "Digital Innovation One (DIO)",
       "year": "2024-04-23",
       "tags": [],
@@ -266,7 +266,7 @@
     },
     {
       "id": 25,
-      "title": "Construindo um sistema de Hospedagem de um Hotel con C#",
+      "title": "Construindo um sistema de Hospedagem de um Hotel com C#",
       "director": "Digital Innovation One (DIO)",
       "year": "2024-04-24",
       "tags": [],
@@ -299,97 +299,57 @@
     },
     {
       "id": 28,
-      "title": "Next.js Completo",
-      "director": "Rocketseat",
-      "year": "2024-10-24",
-      "tags": [
-        "Next.js",
-        "React",
-        "Front-end"
-      ],
-      "genres": [
-        "Next.js",
-        "React",
-        "Front-end"
-      ],
+      "title": "SQL SERVER - Dominando Tabelas e Tipos de Dados",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-26",
+      "tags": [],
+      "genres": [],
       "image": "certificados/29.webp",
-      "description": "Desenvolvimento full-stack com Next.js e React.",
+      "description": "carga horária de 3 horas.",
       "featured": false
     },
     {
       "id": 29,
-      "title": "Segurança da Informação",
-      "director": "Coursera",
-      "year": "2024-11-01",
-      "tags": [
-        "Segurança",
-        "Cybersecurity",
-        "TI"
-      ],
-      "genres": [
-        "Segurança",
-        "Cybersecurity",
-        "TI"
-      ],
+      "title": "SQL SERVER - Manipulando Dados",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-26",
+      "tags": [],
+      "genres": [],
       "image": "certificados/30.webp",
-      "description": "Fundamentos de segurança da informação e cibersegurança.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
       "id": 30,
-      "title": "PHP e Laravel",
-      "director": "Udemy",
-      "year": "2024-11-08",
-      "tags": [
-        "PHP",
-        "Laravel",
-        "Back-end"
-      ],
-      "genres": [
-        "PHP",
-        "Laravel",
-        "Back-end"
-      ],
+      "title": "Criando um Sistema e abstraindo um Celular com POO em C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-26",
+      "tags": [],
+      "genres": [],
       "image": "certificados/31.webp",
-      "description": "Desenvolvimento web back-end com PHP e framework Laravel.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
       "id": 31,
-      "title": "Análise de Dados com Power BI",
-      "director": "Alura",
-      "year": "2024-11-15",
-      "tags": [
-        "Power BI",
-        "Data Analytics",
-        "BI"
-      ],
-      "genres": [
-        "Power BI",
-        "Data Analytics",
-        "BI"
-      ],
+      "title": "Programação Orientada a Objetos com C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-26",
+      "tags": [],
+      "genres": [],
       "image": "certificados/32.webp",
-      "description": "Criação de dashboards e análise de dados com Microsoft Power BI.",
+      "description": "carga horária de 10 horas.",
       "featured": false
     },
     {
       "id": 32,
-      "title": "Golang do Zero",
+      "title": "Introdução as APIs com C#",
       "director": "Digital Innovation One (DIO)",
-      "year": "2024-11-22",
-      "tags": [
-        "Go",
-        "Back-end",
-        "Golang"
-      ],
-      "genres": [
-        "Go",
-        "Back-end",
-        "Golang"
-      ],
+      "year": "2024-04-27",
+      "tags": [],
+      "genres": [],
       "image": "certificados/33.webp",
-      "description": "Introdução à linguagem Go para desenvolvimento back-end.",
+      "description": "carga horária de 3 horas.",
       "featured": false
     },
     {
@@ -397,16 +357,8 @@
       "title": "Redux e Gerenciamento de Estado",
       "director": "Udemy",
       "year": "2024-11-29",
-      "tags": [
-        "Redux",
-        "React",
-        "Front-end"
-      ],
-      "genres": [
-        "Redux",
-        "React",
-        "Front-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/34.webp",
       "description": "Gerenciamento de estado em aplicações React com Redux.",
       "featured": false
@@ -416,16 +368,8 @@
       "title": "Testes Automatizados com Jest",
       "director": "Rocketseat",
       "year": "2024-12-06",
-      "tags": [
-        "Jest",
-        "Testes",
-        "JavaScript"
-      ],
-      "genres": [
-        "Jest",
-        "Testes",
-        "JavaScript"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/35.webp",
       "description": "Testes unitários e de integração com Jest e Testing Library.",
       "featured": false
@@ -435,16 +379,8 @@
       "title": "Arquitetura de Microsserviços",
       "director": "Coursera",
       "year": "2024-12-13",
-      "tags": [
-        "Microsserviços",
-        "Arquitetura",
-        "Back-end"
-      ],
-      "genres": [
-        "Microsserviços",
-        "Arquitetura",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/36.webp",
       "description": "Design e implementação de arquitetura de microsserviços.",
       "featured": true
@@ -454,16 +390,8 @@
       "title": "Tailwind CSS",
       "director": "Alura",
       "year": "2024-12-20",
-      "tags": [
-        "Tailwind",
-        "CSS",
-        "Front-end"
-      ],
-      "genres": [
-        "Tailwind",
-        "CSS",
-        "Front-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/37.webp",
       "description": "Estilização rápida e responsiva com Tailwind CSS.",
       "featured": false
@@ -473,16 +401,8 @@
       "title": "PostgreSQL Avançado",
       "director": "Digital Innovation One (DIO)",
       "year": "2023-01-10",
-      "tags": [
-        "PostgreSQL",
-        "SQL",
-        "Banco de Dados"
-      ],
-      "genres": [
-        "PostgreSQL",
-        "SQL",
-        "Banco de Dados"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/38.webp",
       "description": "Banco de dados relacional avançado com PostgreSQL.",
       "featured": false
@@ -492,16 +412,8 @@
       "title": "CI/CD com GitHub Actions",
       "director": "Udemy",
       "year": "2023-01-24",
-      "tags": [
-        "CI/CD",
-        "DevOps",
-        "GitHub"
-      ],
-      "genres": [
-        "CI/CD",
-        "DevOps",
-        "GitHub"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/39.webp",
       "description": "Integração e entrega contínua com GitHub Actions.",
       "featured": false
@@ -511,16 +423,8 @@
       "title": "Nest.js Framework",
       "director": "Rocketseat",
       "year": "2023-02-07",
-      "tags": [
-        "NestJS",
-        "Node.js",
-        "Back-end"
-      ],
-      "genres": [
-        "NestJS",
-        "Node.js",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/40.webp",
       "description": "Desenvolvimento de APIs escaláveis com NestJS.",
       "featured": false
@@ -530,16 +434,8 @@
       "title": "Kotlin para Android",
       "director": "Google Developers",
       "year": "2023-02-21",
-      "tags": [
-        "Kotlin",
-        "Android",
-        "Mobile"
-      ],
-      "genres": [
-        "Kotlin",
-        "Android",
-        "Mobile"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/41.webp",
       "description": "Desenvolvimento Android nativo com Kotlin.",
       "featured": false
@@ -549,16 +445,8 @@
       "title": "Processamento de Linguagem Natural",
       "director": "Coursera",
       "year": "2023-03-07",
-      "tags": [
-        "NLP",
-        "IA",
-        "Python"
-      ],
-      "genres": [
-        "NLP",
-        "IA",
-        "Python"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/42.webp",
       "description": "Processamento de linguagem natural com transformers e BERT.",
       "featured": false
@@ -568,16 +456,8 @@
       "title": "Swift e iOS Development",
       "director": "Apple Developer",
       "year": "2023-03-21",
-      "tags": [
-        "Swift",
-        "iOS",
-        "Mobile"
-      ],
-      "genres": [
-        "Swift",
-        "iOS",
-        "Mobile"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/43.webp",
       "description": "Desenvolvimento de aplicativos iOS com Swift.",
       "featured": false
@@ -587,16 +467,8 @@
       "title": "Redis e Cache",
       "director": "Digital Innovation One (DIO)",
       "year": "2023-04-04",
-      "tags": [
-        "Redis",
-        "Cache",
-        "Back-end"
-      ],
-      "genres": [
-        "Redis",
-        "Cache",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/44.webp",
       "description": "Estratégias de cache e banco de dados em memória com Redis.",
       "featured": false
@@ -606,16 +478,8 @@
       "title": "Svelte do Zero",
       "director": "Udemy",
       "year": "2023-04-18",
-      "tags": [
-        "Svelte",
-        "JavaScript",
-        "Front-end"
-      ],
-      "genres": [
-        "Svelte",
-        "JavaScript",
-        "Front-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/45.webp",
       "description": "Desenvolvimento de interfaces reativas com Svelte.",
       "featured": false
@@ -625,16 +489,8 @@
       "title": "Engenharia de Dados com Spark",
       "director": "Alura",
       "year": "2023-05-02",
-      "tags": [
-        "Spark",
-        "Engenharia de Dados",
-        "Big Data"
-      ],
-      "genres": [
-        "Spark",
-        "Engenharia de Dados",
-        "Big Data"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/46.webp",
       "description": "Processamento de grandes volumes de dados com Apache Spark.",
       "featured": false
@@ -644,16 +500,8 @@
       "title": "Terraform Infrastructure as Code",
       "director": "HashiCorp",
       "year": "2023-05-16",
-      "tags": [
-        "Terraform",
-        "IaC",
-        "DevOps"
-      ],
-      "genres": [
-        "Terraform",
-        "IaC",
-        "DevOps"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/47.webp",
       "description": "Infraestrutura como código com Terraform.",
       "featured": false
@@ -663,16 +511,8 @@
       "title": "Ruby on Rails",
       "director": "Udemy",
       "year": "2023-05-30",
-      "tags": [
-        "Ruby",
-        "Rails",
-        "Back-end"
-      ],
-      "genres": [
-        "Ruby",
-        "Rails",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/48.webp",
       "description": "Desenvolvimento web ágil com Ruby on Rails.",
       "featured": false
@@ -682,16 +522,8 @@
       "title": "Visão Computacional com OpenCV",
       "director": "Coursera",
       "year": "2023-06-13",
-      "tags": [
-        "OpenCV",
-        "Visão Computacional",
-        "IA"
-      ],
-      "genres": [
-        "OpenCV",
-        "Visão Computacional",
-        "IA"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/49.webp",
       "description": "Processamento de imagens e visão computacional com OpenCV.",
       "featured": false
@@ -701,16 +533,8 @@
       "title": "Electron.js Desktop Apps",
       "director": "Rocketseat",
       "year": "2023-06-27",
-      "tags": [
-        "Electron",
-        "Desktop",
-        "JavaScript"
-      ],
-      "genres": [
-        "Electron",
-        "Desktop",
-        "JavaScript"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/50.webp",
       "description": "Criação de aplicações desktop com Electron.js.",
       "featured": false
@@ -720,16 +544,8 @@
       "title": "Rust Fundamentos",
       "director": "Digital Innovation One (DIO)",
       "year": "2023-07-11",
-      "tags": [
-        "Rust",
-        "Sistemas",
-        "Back-end"
-      ],
-      "genres": [
-        "Rust",
-        "Sistemas",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/51.webp",
       "description": "Introdução à linguagem Rust para programação de sistemas.",
       "featured": false
@@ -739,16 +555,8 @@
       "title": "Azure Fundamentals AZ-900",
       "director": "Microsoft Learn",
       "year": "2023-07-25",
-      "tags": [
-        "Azure",
-        "Cloud",
-        "Microsoft"
-      ],
-      "genres": [
-        "Azure",
-        "Cloud",
-        "Microsoft"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/52.webp",
       "description": "Fundamentos da plataforma de nuvem Microsoft Azure.",
       "featured": true
@@ -758,16 +566,8 @@
       "title": "Pandas e NumPy para Data Science",
       "director": "Alura",
       "year": "2023-08-08",
-      "tags": [
-        "Pandas",
-        "NumPy",
-        "Data Science"
-      ],
-      "genres": [
-        "Pandas",
-        "NumPy",
-        "Data Science"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/53.webp",
       "description": "Manipulação e análise de dados com Pandas e NumPy.",
       "featured": false
@@ -777,16 +577,8 @@
       "title": "Ethical Hacking",
       "director": "EC-Council",
       "year": "2023-08-22",
-      "tags": [
-        "Hacking",
-        "Segurança",
-        "Cybersecurity"
-      ],
-      "genres": [
-        "Hacking",
-        "Segurança",
-        "Cybersecurity"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/54.webp",
       "description": "Técnicas de hacking ético e testes de penetração.",
       "featured": false
@@ -796,16 +588,8 @@
       "title": "Elixir e Phoenix",
       "director": "Udemy",
       "year": "2023-09-05",
-      "tags": [
-        "Elixir",
-        "Phoenix",
-        "Back-end"
-      ],
-      "genres": [
-        "Elixir",
-        "Phoenix",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/55.webp",
       "description": "Programação funcional com Elixir e framework Phoenix.",
       "featured": false
@@ -815,16 +599,8 @@
       "title": "Google Cloud Professional",
       "director": "Google Cloud",
       "year": "2023-09-19",
-      "tags": [
-        "GCP",
-        "Cloud",
-        "DevOps"
-      ],
-      "genres": [
-        "GCP",
-        "Cloud",
-        "DevOps"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/56.webp",
       "description": "Plataforma Google Cloud e serviços de infraestrutura.",
       "featured": false
@@ -834,16 +610,8 @@
       "title": "Blockchain e Web3",
       "director": "Digital Innovation One (DIO)",
       "year": "2023-10-03",
-      "tags": [
-        "Blockchain",
-        "Web3",
-        "Crypto"
-      ],
-      "genres": [
-        "Blockchain",
-        "Web3",
-        "Crypto"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/57.webp",
       "description": "Fundamentos de blockchain e desenvolvimento Web3.",
       "featured": false
@@ -853,16 +621,8 @@
       "title": "Astro Framework",
       "director": "Rocketseat",
       "year": "2023-10-17",
-      "tags": [
-        "Astro",
-        "Front-end",
-        "JavaScript"
-      ],
-      "genres": [
-        "Astro",
-        "Front-end",
-        "JavaScript"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/58.webp",
       "description": "Sites estáticos modernos com Astro Framework.",
       "featured": false
@@ -872,16 +632,8 @@
       "title": "Prometheus e Grafana",
       "director": "Linux Foundation",
       "year": "2023-10-31",
-      "tags": [
-        "Prometheus",
-        "Grafana",
-        "Monitoramento"
-      ],
-      "genres": [
-        "Prometheus",
-        "Grafana",
-        "Monitoramento"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/59.webp",
       "description": "Monitoramento e observabilidade com Prometheus e Grafana.",
       "featured": false
@@ -891,16 +643,8 @@
       "title": "Django REST Framework",
       "director": "Alura",
       "year": "2023-11-14",
-      "tags": [
-        "Django",
-        "Python",
-        "Back-end"
-      ],
-      "genres": [
-        "Django",
-        "Python",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/60.webp",
       "description": "APIs REST com Django e Django REST Framework.",
       "featured": false
@@ -910,16 +654,8 @@
       "title": "Inteligência Artificial Generativa",
       "director": "Coursera",
       "year": "2023-11-28",
-      "tags": [
-        "IA Generativa",
-        "ChatGPT",
-        "LLM"
-      ],
-      "genres": [
-        "IA Generativa",
-        "ChatGPT",
-        "LLM"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/61.webp",
       "description": "Fundamentos de IA generativa, LLMs e engenharia de prompt.",
       "featured": true
@@ -929,16 +665,8 @@
       "title": "Scala para Big Data",
       "director": "Coursera",
       "year": "2023-12-12",
-      "tags": [
-        "Scala",
-        "Big Data",
-        "Back-end"
-      ],
-      "genres": [
-        "Scala",
-        "Big Data",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/62.webp",
       "description": "Programação funcional com Scala aplicada a Big Data.",
       "featured": false
@@ -948,16 +676,8 @@
       "title": "Testes E2E com Cypress",
       "director": "Udemy",
       "year": "2023-12-26",
-      "tags": [
-        "Cypress",
-        "Testes",
-        "Front-end"
-      ],
-      "genres": [
-        "Cypress",
-        "Testes",
-        "Front-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/63.webp",
       "description": "Testes end-to-end de aplicações web com Cypress.",
       "featured": false
@@ -967,16 +687,8 @@
       "title": "Haskell Funcional",
       "director": "Digital Innovation One (DIO)",
       "year": "2022-01-10",
-      "tags": [
-        "Haskell",
-        "Funcional",
-        "Back-end"
-      ],
-      "genres": [
-        "Haskell",
-        "Funcional",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/64.webp",
       "description": "Introdução à programação funcional com Haskell.",
       "featured": false
@@ -986,16 +698,8 @@
       "title": "Webpack e Build Tools",
       "director": "Alura",
       "year": "2022-01-24",
-      "tags": [
-        "Webpack",
-        "Build Tools",
-        "Front-end"
-      ],
-      "genres": [
-        "Webpack",
-        "Build Tools",
-        "Front-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/65.webp",
       "description": "Configuração e otimização de projetos com Webpack.",
       "featured": false
@@ -1005,16 +709,8 @@
       "title": "Microsserviços com Spring Cloud",
       "director": "Udemy",
       "year": "2022-02-07",
-      "tags": [
-        "Spring Cloud",
-        "Java",
-        "Microsserviços"
-      ],
-      "genres": [
-        "Spring Cloud",
-        "Java",
-        "Microsserviços"
-      ],
+      "tags":[],
+      "genres": [],
       "image": "certificados/66.webp",
       "description": "Arquitetura de microsserviços com Spring Cloud.",
       "featured": false
@@ -1024,16 +720,8 @@
       "title": "Apache Kafka",
       "director": "Confluent",
       "year": "2022-02-21",
-      "tags": [
-        "Kafka",
-        "Mensageria",
-        "Back-end"
-      ],
-      "genres": [
-        "Kafka",
-        "Mensageria",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/67.webp",
       "description": "Streaming de dados e mensageria com Apache Kafka.",
       "featured": false
@@ -1043,16 +731,8 @@
       "title": "Ionic Framework",
       "director": "Rocketseat",
       "year": "2022-03-07",
-      "tags": [
-        "Ionic",
-        "Mobile",
-        "Angular"
-      ],
-      "genres": [
-        "Ionic",
-        "Mobile",
-        "Angular"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/68.webp",
       "description": "Desenvolvimento mobile híbrido com Ionic.",
       "featured": false
@@ -1062,16 +742,8 @@
       "title": "Análise de Algoritmos",
       "director": "Coursera",
       "year": "2022-03-21",
-      "tags": [
-        "Algoritmos",
-        "Estrutura de Dados",
-        "CS"
-      ],
-      "genres": [
-        "Algoritmos",
-        "Estrutura de Dados",
-        "CS"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/69.webp",
       "description": "Estruturas de dados e análise de complexidade de algoritmos.",
       "featured": false
@@ -1081,16 +753,8 @@
       "title": "Observability com OpenTelemetry",
       "director": "Linux Foundation",
       "year": "2022-04-04",
-      "tags": [
-        "OpenTelemetry",
-        "Observabilidade",
-        "DevOps"
-      ],
-      "genres": [
-        "OpenTelemetry",
-        "Observabilidade",
-        "DevOps"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/70.webp",
       "description": "Rastreamento e observabilidade com OpenTelemetry.",
       "featured": false
@@ -1100,16 +764,8 @@
       "title": "CSS Grid e Flexbox",
       "director": "Alura",
       "year": "2022-04-18",
-      "tags": [
-        "CSS",
-        "Grid",
-        "Flexbox"
-      ],
-      "genres": [
-        "CSS",
-        "Grid",
-        "Flexbox"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/71.webp",
       "description": "Layout moderno com CSS Grid e Flexbox.",
       "featured": false
@@ -1119,16 +775,8 @@
       "title": "Ansible para Automação",
       "director": "Red Hat",
       "year": "2022-05-02",
-      "tags": [
-        "Ansible",
-        "Automação",
-        "DevOps"
-      ],
-      "genres": [
-        "Ansible",
-        "Automação",
-        "DevOps"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/72.webp",
       "description": "Automação de infraestrutura com Ansible.",
       "featured": false
@@ -1138,16 +786,8 @@
       "title": "DDD - Domain Driven Design",
       "director": "Udemy",
       "year": "2022-05-16",
-      "tags": [
-        "DDD",
-        "Arquitetura",
-        "Back-end"
-      ],
-      "genres": [
-        "DDD",
-        "Arquitetura",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/73.webp",
       "description": "Design orientado ao domínio para sistemas complexos.",
       "featured": false
@@ -1157,16 +797,8 @@
       "title": "R para Estatística",
       "director": "Coursera",
       "year": "2022-05-30",
-      "tags": [
-        "R",
-        "Estatística",
-        "Data Science"
-      ],
-      "genres": [
-        "R",
-        "Estatística",
-        "Data Science"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/74.webp",
       "description": "Análise estatística e visualização de dados com R.",
       "featured": false
@@ -1176,16 +808,8 @@
       "title": "WebSockets em Tempo Real",
       "director": "Rocketseat",
       "year": "2022-06-13",
-      "tags": [
-        "WebSockets",
-        "Back-end",
-        "Tempo Real"
-      ],
-      "genres": [
-        "WebSockets",
-        "Back-end",
-        "Tempo Real"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/75.webp",
       "description": "Comunicação em tempo real com WebSockets e Socket.io.",
       "featured": false
@@ -1195,16 +819,8 @@
       "title": "Nginx e Servidores Web",
       "director": "Digital Innovation One (DIO)",
       "year": "2022-06-27",
-      "tags": [
-        "Nginx",
-        "Servidores",
-        "DevOps"
-      ],
-      "genres": [
-        "Nginx",
-        "Servidores",
-        "DevOps"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/76.webp",
       "description": "Configuração e otimização de servidores web com Nginx.",
       "featured": false
@@ -1214,16 +830,8 @@
       "title": "Unity Game Development",
       "director": "Alura",
       "year": "2022-07-11",
-      "tags": [
-        "Unity",
-        "Game Dev",
-        "C#"
-      ],
-      "genres": [
-        "Unity",
-        "Game Dev",
-        "C#"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/77.webp",
       "description": "Desenvolvimento de jogos 2D e 3D com Unity.",
       "featured": false
@@ -1233,16 +841,8 @@
       "title": "Prisma ORM",
       "director": "Udemy",
       "year": "2022-07-25",
-      "tags": [
-        "Prisma",
-        "ORM",
-        "Back-end"
-      ],
-      "genres": [
-        "Prisma",
-        "ORM",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/78.webp",
       "description": "Gerenciamento de banco de dados com Prisma ORM.",
       "featured": false
@@ -1252,16 +852,8 @@
       "title": "Apache Airflow",
       "director": "Coursera",
       "year": "2022-08-08",
-      "tags": [
-        "Airflow",
-        "Engenharia de Dados",
-        "Pipeline"
-      ],
-      "genres": [
-        "Airflow",
-        "Engenharia de Dados",
-        "Pipeline"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/79.webp",
       "description": "Orquestração de pipelines de dados com Apache Airflow.",
       "featured": false
@@ -1271,16 +863,8 @@
       "title": "Solid Principles",
       "director": "Rocketseat",
       "year": "2022-08-22",
-      "tags": [
-        "SOLID",
-        "POO",
-        "Arquitetura"
-      ],
-      "genres": [
-        "SOLID",
-        "POO",
-        "Arquitetura"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/80.webp",
       "description": "Princípios SOLID para desenvolvimento orientado a objetos.",
       "featured": false
@@ -1290,16 +874,8 @@
       "title": "Lua Scripting",
       "director": "Digital Innovation One (DIO)",
       "year": "2022-09-05",
-      "tags": [
-        "Lua",
-        "Scripting",
-        "Game Dev"
-      ],
-      "genres": [
-        "Lua",
-        "Scripting",
-        "Game Dev"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/81.webp",
       "description": "Programação com Lua para scripts e desenvolvimento de jogos.",
       "featured": false
@@ -1309,16 +885,8 @@
       "title": "Segurança em APIs REST",
       "director": "Alura",
       "year": "2022-09-19",
-      "tags": [
-        "Segurança",
-        "API",
-        "JWT"
-      ],
-      "genres": [
-        "Segurança",
-        "API",
-        "JWT"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/82.webp",
       "description": "Autenticação, autorização e segurança em APIs REST com JWT.",
       "featured": false
@@ -1328,16 +896,8 @@
       "title": "Apache Hadoop",
       "director": "Coursera",
       "year": "2022-10-03",
-      "tags": [
-        "Hadoop",
-        "Big Data",
-        "Engenharia de Dados"
-      ],
-      "genres": [
-        "Hadoop",
-        "Big Data",
-        "Engenharia de Dados"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/83.webp",
       "description": "Processamento distribuído de dados com Apache Hadoop.",
       "featured": false
@@ -1347,16 +907,8 @@
       "title": "Storybook para React",
       "director": "Udemy",
       "year": "2022-10-17",
-      "tags": [
-        "Storybook",
-        "React",
-        "Front-end"
-      ],
-      "genres": [
-        "Storybook",
-        "React",
-        "Front-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/84.webp",
       "description": "Documentação e desenvolvimento de componentes com Storybook.",
       "featured": false
@@ -1366,16 +918,8 @@
       "title": "Machine Learning Ops (MLOps)",
       "director": "Coursera",
       "year": "2022-10-31",
-      "tags": [
-        "MLOps",
-        "Machine Learning",
-        "DevOps"
-      ],
-      "genres": [
-        "MLOps",
-        "Machine Learning",
-        "DevOps"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/85.webp",
       "description": "Operacionalização de modelos de machine learning.",
       "featured": false
@@ -1385,16 +929,8 @@
       "title": "Ionic com Angular",
       "director": "Alura",
       "year": "2022-11-14",
-      "tags": [
-        "Ionic",
-        "Angular",
-        "Mobile"
-      ],
-      "genres": [
-        "Ionic",
-        "Angular",
-        "Mobile"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/86.webp",
       "description": "Desenvolvimento de aplicativos móveis com Ionic e Angular.",
       "featured": false
@@ -1404,16 +940,8 @@
       "title": "Engenharia de Prompt",
       "director": "Digital Innovation One (DIO)",
       "year": "2022-11-28",
-      "tags": [
-        "Prompt Engineering",
-        "IA",
-        "LLM"
-      ],
-      "genres": [
-        "Prompt Engineering",
-        "IA",
-        "LLM"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/87.webp",
       "description": "Técnicas de engenharia de prompt para modelos de linguagem.",
       "featured": false
@@ -1423,16 +951,8 @@
       "title": "Kotlin Multiplatform",
       "director": "JetBrains",
       "year": "2022-12-12",
-      "tags": [
-        "Kotlin",
-        "Multiplatform",
-        "Mobile"
-      ],
-      "genres": [
-        "Kotlin",
-        "Multiplatform",
-        "Mobile"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/88.webp",
       "description": "Desenvolvimento multiplataforma com Kotlin Multiplatform.",
       "featured": false
@@ -1442,16 +962,8 @@
       "title": "Vite e Build Moderno",
       "director": "Rocketseat",
       "year": "2022-12-26",
-      "tags": [
-        "Vite",
-        "Build Tools",
-        "Front-end"
-      ],
-      "genres": [
-        "Vite",
-        "Build Tools",
-        "Front-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/89.webp",
       "description": "Build de projetos front-end modernos com Vite.",
       "featured": false
@@ -1461,16 +973,8 @@
       "title": "Clean Architecture",
       "director": "Udemy",
       "year": "2021-01-15",
-      "tags": [
-        "Clean Architecture",
-        "Arquitetura",
-        "Back-end"
-      ],
-      "genres": [
-        "Clean Architecture",
-        "Arquitetura",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/90.webp",
       "description": "Arquitetura limpa e organização de código de alto nível.",
       "featured": false
@@ -1480,16 +984,8 @@
       "title": "Matplotlib e Seaborn",
       "director": "Coursera",
       "year": "2021-01-29",
-      "tags": [
-        "Matplotlib",
-        "Seaborn",
-        "Data Science"
-      ],
-      "genres": [
-        "Matplotlib",
-        "Seaborn",
-        "Data Science"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/91.webp",
       "description": "Visualização de dados com Matplotlib e Seaborn.",
       "featured": false
@@ -1499,16 +995,8 @@
       "title": "Serverless com AWS Lambda",
       "director": "Amazon Web Services",
       "year": "2021-02-12",
-      "tags": [
-        "Serverless",
-        "AWS",
-        "Cloud"
-      ],
-      "genres": [
-        "Serverless",
-        "AWS",
-        "Cloud"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/92.webp",
       "description": "Funções serverless com AWS Lambda e API Gateway.",
       "featured": false
@@ -1518,16 +1006,8 @@
       "title": "Assembly Básico",
       "director": "Digital Innovation One (DIO)",
       "year": "2021-02-26",
-      "tags": [
-        "Assembly",
-        "Sistemas",
-        "Low Level"
-      ],
-      "genres": [
-        "Assembly",
-        "Sistemas",
-        "Low Level"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/93.webp",
       "description": "Fundamentos de programação em linguagem Assembly.",
       "featured": false
@@ -1537,16 +1017,8 @@
       "title": "Nuxt.js Full-Stack",
       "director": "Alura",
       "year": "2021-03-12",
-      "tags": [
-        "Nuxt.js",
-        "Vue.js",
-        "Front-end"
-      ],
-      "genres": [
-        "Nuxt.js",
-        "Vue.js",
-        "Front-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/94.webp",
       "description": "Desenvolvimento full-stack com Nuxt.js e Vue.js.",
       "featured": false
@@ -1556,16 +1028,8 @@
       "title": "Testes com Selenium",
       "director": "Udemy",
       "year": "2021-03-26",
-      "tags": [
-        "Selenium",
-        "Testes",
-        "Automação"
-      ],
-      "genres": [
-        "Selenium",
-        "Testes",
-        "Automação"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/95.webp",
       "description": "Automação de testes de interface com Selenium WebDriver.",
       "featured": false
@@ -1575,16 +1039,8 @@
       "title": "GraphQL com Apollo Client",
       "director": "Rocketseat",
       "year": "2021-04-09",
-      "tags": [
-        "GraphQL",
-        "Apollo",
-        "Front-end"
-      ],
-      "genres": [
-        "GraphQL",
-        "Apollo",
-        "Front-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/96.webp",
       "description": "Consumo de APIs GraphQL com Apollo Client.",
       "featured": false
@@ -1594,16 +1050,8 @@
       "title": "C++ Moderno",
       "director": "Coursera",
       "year": "2021-04-23",
-      "tags": [
-        "C++",
-        "Sistemas",
-        "Back-end"
-      ],
-      "genres": [
-        "C++",
-        "Sistemas",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/97.webp",
       "description": "Programação em C++ moderno com STL e boas práticas.",
       "featured": false
@@ -1613,16 +1061,8 @@
       "title": "Supabase e BaaS",
       "director": "Digital Innovation One (DIO)",
       "year": "2021-05-07",
-      "tags": [
-        "Supabase",
-        "BaaS",
-        "Back-end"
-      ],
-      "genres": [
-        "Supabase",
-        "BaaS",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/98.webp",
       "description": "Backend as a Service com Supabase.",
       "featured": false
