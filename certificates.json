@@ -24,33 +24,24 @@
     },
     {
       "id": 3,
-      "title": "HTML5 e CSS3 Completo",
-      "director": "Udemy",
-      "year": "2024-01-15",
-      "tags": [
-],
+      "title": "Desafios de Projetos: Crie um Portfólio Vencedor",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-14",
+      "tags": [],
       "genres": [],
       "image": "certificados/4.webp",
-      "description": "Curso completo de HTML5 e CSS3 do zero ao avançado.",
+      "description": "carga horária de 1 hora.",
       "featured": false
     },
     {
       "id": 4,
-      "title": "JavaScript Moderno ES6+",
-      "director": "Rocketseat",
-      "year": "2024-02-20",
-      "tags": [
-        "JavaScript",
-        "Front-end",
-        "ES6"
-      ],
-      "genres": [
-        "JavaScript",
-        "Front-end",
-        "ES6"
-      ],
+      "title": "Introdução ao .NET",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-16",
+      "tags": [],
+      "genres": [],
       "image": "certificados/5.webp",
-      "description": "Aprendizado completo de JavaScript moderno com ES6 e recursos avançados.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
