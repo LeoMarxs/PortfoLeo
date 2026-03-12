@@ -13,19 +13,13 @@
     },
     {
       "id": 2,
-      "title": "Python para Data Science",
-      "director": "Alura",
-      "year": "2024-08-10",
-      "tags": [
-        "Python",
-        "Data Science"
-      ],
-      "genres": [
-        "Python",
-        "Data Science"
-      ],
+      "title": "Versionamento de Código com Git e GitHub",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-14",
+      "tags": [],
+      "genres": [],
       "image": "certificados/3.webp",
-      "description": "Introdução ao Python voltado para análise de dados e ciência de dados.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
@@ -34,15 +28,8 @@
       "director": "Udemy",
       "year": "2024-01-15",
       "tags": [
-        "HTML",
-        "CSS",
-        "Front-end"
-      ],
-      "genres": [
-        "HTML",
-        "CSS",
-        "Front-end"
-      ],
+],
+      "genres": [],
       "image": "certificados/4.webp",
       "description": "Curso completo de HTML5 e CSS3 do zero ao avançado.",
       "featured": false
