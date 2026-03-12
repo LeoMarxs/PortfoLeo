@@ -46,439 +46,255 @@
     },
     {
       "id": 5,
-      "title": "React.js do Zero ao Avançado",
-      "director": "Udemy",
-      "year": "2024-03-05",
-      "tags": [
-        "React",
-        "JavaScript",
-        "Front-end"
-      ],
-      "genres": [
-        "React",
-        "JavaScript",
-        "Front-end"
-      ],
+      "title": "Introdução as IDEs e Configuração de Ambiente .NET",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-16",
+      "tags": [],
+      "genres": [],
       "image": "certificados/6.webp",
-      "description": "Curso completo de React.js com hooks, context API e boas práticas.",
+      "description": "carga horária de 2 horas.",
       "featured": true
     },
     {
       "id": 6,
-      "title": "Node.js e Express",
-      "director": "Alura",
-      "year": "2024-03-18",
-      "tags": [
-        "Node.js",
-        "Back-end",
-        "JavaScript"
-      ],
-      "genres": [
-        "Node.js",
-        "Back-end",
-        "JavaScript"
-      ],
+      "title": "Sintaxe e Tipos de Dados em C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-16",
+      "tags": [],
+      "genres": [],
       "image": "certificados/7.webp",
-      "description": "Desenvolvimento back-end com Node.js e framework Express.",
+      "description": "carga horária de 3 horas.",
       "featured": false
     },
     {
       "id": 7,
-      "title": "Banco de Dados SQL",
+      "title": "Tipos de Operadores em C#",
       "director": "Digital Innovation One (DIO)",
-      "year": "2024-04-01",
-      "tags": [
-        "SQL",
-        "Banco de Dados",
-        "Back-end"
-      ],
-      "genres": [
-        "SQL",
-        "Banco de Dados",
-        "Back-end"
-      ],
+      "year": "2024-04-17",
+      "tags": [],
+      "genres": [],
       "image": "certificados/8.webp",
-      "description": "Fundamentos de banco de dados relacional com SQL.",
+      "description": "carga horária de 3 horas.",
       "featured": false
     },
     {
       "id": 8,
-      "title": "Docker e Containers",
-      "director": "Rocketseat",
-      "year": "2024-04-14",
-      "tags": [
-        "Docker",
-        "DevOps",
-        "Containers"
-      ],
-      "genres": [
-        "Docker",
-        "DevOps",
-        "Containers"
-      ],
+      "title": "Operadores Aritméticos em C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-17",
+      "tags": [],
+      "genres": [],
       "image": "certificados/9.webp",
-      "description": "Containerização de aplicações com Docker e Docker Compose.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
       "id": 9,
-      "title": "Git e GitHub Completo",
-      "director": "Udemy",
-      "year": "2024-04-28",
-      "tags": [
-        "Git",
-        "GitHub",
-        "Versionamento"
-      ],
-      "genres": [
-        "Git",
-        "GitHub",
-        "Versionamento"
-      ],
+      "title": "Conhecendo as Estruturas de Repetição em C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-17",
+      "tags": [],
+      "genres": [],
       "image": "certificados/10.webp",
-      "description": "Controle de versão com Git e colaboração no GitHub.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
       "id": 10,
-      "title": "Java Orientado a Objetos",
-      "director": "Alura",
-      "year": "2024-05-10",
-      "tags": [
-        "Java",
-        "POO",
-        "Back-end"
-      ],
-      "genres": [
-        "Java",
-        "POO",
-        "Back-end"
-      ],
+      "title": "Conhecendo a Organização de um Programa C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-18",
+      "tags": [],
+      "genres": [],
       "image": "certificados/11.webp",
-      "description": "Programação orientada a objetos com Java.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
       "id": 11,
-      "title": "Machine Learning com Python",
-      "director": "Coursera",
-      "year": "2024-05-22",
-      "tags": [
-        "Machine Learning",
-        "Python",
-        "IA"
-      ],
-      "genres": [
-        "Machine Learning",
-        "Python",
-        "IA"
-      ],
+      "title": "Array e Listas em C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-18",
+      "tags": [],
+      "genres": [],
       "image": "certificados/12.webp",
-      "description": "Algoritmos de machine learning aplicados com Python e scikit-learn.",
+      "description": "carga horária de 2 horas.",
       "featured": true
     },
     {
       "id": 12,
-      "title": "TypeScript Fundamentos",
+      "title": "Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional",
       "director": "Digital Innovation One (DIO)",
-      "year": "2024-06-03",
-      "tags": [
-        "TypeScript",
-        "JavaScript",
-        "Front-end"
-      ],
-      "genres": [
-        "TypeScript",
-        "JavaScript",
-        "Front-end"
-      ],
+      "year": "2024-04-18",
+      "tags": [],
+      "genres": [],
       "image": "certificados/13.webp",
-      "description": "Introdução ao TypeScript e tipagem estática no JavaScript.",
+      "description": "carga horária de 1 hora.",
       "featured": false
     },
     {
       "id": 13,
-      "title": "Vue.js 3 Completo",
+      "title": "Construindo um Sistema para um Estacionamento com C#",
       "director": "Udemy",
-      "year": "2024-06-15",
-      "tags": [
-        "Vue.js",
-        "JavaScript",
-        "Front-end"
-      ],
-      "genres": [
-        "Vue.js",
-        "JavaScript",
-        "Front-end"
-      ],
+      "year": "2024-04-19",
+      "tags": [],
+      "genres": [],
       "image": "certificados/14.webp",
-      "description": "Desenvolvimento de interfaces modernas com Vue.js 3 e Composition API.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
       "id": 14,
-      "title": "AWS Cloud Practitioner",
-      "director": "Amazon Web Services",
-      "year": "2024-06-28",
-      "tags": [
-        "AWS",
-        "Cloud",
-        "DevOps"
-      ],
-      "genres": [
-        "AWS",
-        "Cloud",
-        "DevOps"
-      ],
+      "title": "Propriedades, Métodos e Construtores com C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-21",
+      "tags": [],
+      "genres": [],
       "image": "certificados/15.webp",
-      "description": "Fundamentos de computação em nuvem com Amazon Web Services.",
+      "description": "carga horária de 3 horas.",
       "featured": true
     },
     {
       "id": 15,
-      "title": "Flutter e Dart",
-      "director": "Alura",
-      "year": "2024-07-05",
-      "tags": [
-        "Flutter",
-        "Dart",
-        "Mobile"
-      ],
-      "genres": [
-        "Flutter",
-        "Dart",
-        "Mobile"
-      ],
+      "title": "Manipulando Valores com C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-22",
+      "tags": [],
+      "genres": [],
       "image": "certificados/16.webp",
-      "description": "Desenvolvimento mobile multiplataforma com Flutter e Dart.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
       "id": 16,
-      "title": "Angular Completo",
-      "director": "Udemy",
-      "year": "2024-07-12",
-      "tags": [
-        "Angular",
-        "TypeScript",
-        "Front-end"
-      ],
-      "genres": [
-        "Angular",
-        "TypeScript",
-        "Front-end"
-      ],
+      "title": "Exceções e Coleções cem C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-23",
+      "tags": [],
+      "genres": [],
       "image": "certificados/17.webp",
-      "description": "Framework Angular completo com TypeScript e RxJS.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
       "id": 17,
-      "title": "Python Avançado",
-      "director": "Rocketseat",
-      "year": "2024-07-19",
-      "tags": [
-        "Python",
-        "Back-end",
-        "Avançado"
-      ],
-      "genres": [
-        "Python",
-        "Back-end",
-        "Avançado"
-      ],
+      "title": "Tuplas, Operador Ternário e Desconstrução de um Objeto com C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-23",
+      "tags": [],
+      "genres": [],
       "image": "certificados/18.webp",
-      "description": "Programação avançada em Python com decorators, generators e metaclasses.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
       "id": 18,
-      "title": "MongoDB e NoSQL",
+      "title": "Introdução à Plataforma Java",
       "director": "Digital Innovation One (DIO)",
-      "year": "2024-08-01",
-      "tags": [
-        "MongoDB",
-        "NoSQL",
-        "Banco de Dados"
-      ],
-      "genres": [
-        "MongoDB",
-        "NoSQL",
-        "Banco de Dados"
-      ],
+      "year": "2024-04-23",
+      "tags": [],
+      "genres": [],
       "image": "certificados/19.webp",
-      "description": "Banco de dados não relacional com MongoDB.",
+      "description": "carga horária de 1 hora.",
       "featured": false
     },
     {
       "id": 19,
-      "title": "Kubernetes para Desenvolvedores",
-      "director": "Linux Foundation",
-      "year": "2024-08-14",
-      "tags": [
-        "Kubernetes",
-        "DevOps",
-        "Cloud"
-      ],
-      "genres": [
-        "Kubernetes",
-        "DevOps",
-        "Cloud"
-      ],
+      "title": "Ambiente de Desenvolvimento Java",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-23",
+      "tags": [],
+      "genres": [],
       "image": "certificados/20.webp",
-      "description": "Orquestração de containers com Kubernetes.",
+      "description": "carga horária de 1 hora.",
       "featured": false
     },
     {
       "id": 20,
-      "title": "React Native",
-      "director": "Alura",
-      "year": "2024-08-20",
-      "tags": [
-        "React Native",
-        "Mobile",
-        "JavaScript"
-      ],
-      "genres": [
-        "React Native",
-        "Mobile",
-        "JavaScript"
-      ],
+      "title": "Fundamentos do .NET",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-23",
+      "tags": [],
+      "genres": [],
       "image": "certificados/21.webp",
-      "description": "Desenvolvimento mobile com React Native para iOS e Android.",
+      "description": "carga horária de 22 horas.",
       "featured": false
     },
     {
       "id": 21,
-      "title": "Spring Boot com Java",
-      "director": "Udemy",
-      "year": "2024-09-02",
-      "tags": [
-        "Spring Boot",
-        "Java",
-        "Back-end"
-      ],
-      "genres": [
-        "Spring Boot",
-        "Java",
-        "Back-end"
-      ],
+      "title": "Nuget, Serializar e Atributos no C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-24",
+      "tags": [],
+      "genres": [],
       "image": "certificados/22.webp",
-      "description": "Desenvolvimento de APIs RESTful com Spring Boot e Java.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
       "id": 22,
-      "title": "Deep Learning com TensorFlow",
-      "director": "Coursera",
-      "year": "2024-09-10",
-      "tags": [
-        "Deep Learning",
-        "TensorFlow",
-        "IA"
-      ],
-      "genres": [
-        "Deep Learning",
-        "TensorFlow",
-        "IA"
-      ],
+      "title": "Introdução, Abstração e Encapsulamento com C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-24",
+      "tags": [],
+      "genres": [],
       "image": "certificados/23.webp",
-      "description": "Redes neurais profundas com TensorFlow e Keras.",
+      "description": "carga horária de 2 horas.",
       "featured": true
     },
     {
       "id": 23,
-      "title": "Linux Fundamentos",
+      "title": "Herança e Polimorfismo com C#",
       "director": "Digital Innovation One (DIO)",
-      "year": "2024-09-18",
-      "tags": [
-        "Linux",
-        "DevOps",
-        "Sistema Operacional"
-      ],
-      "genres": [
-        "Linux",
-        "DevOps",
-        "Sistema Operacional"
-      ],
+      "year": "2024-04-24",
+      "tags": [],
+      "genres": [],
       "image": "certificados/24.webp",
-      "description": "Comandos e administração básica do sistema Linux.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
       "id": 24,
-      "title": "GraphQL com Node.js",
-      "director": "Rocketseat",
-      "year": "2024-09-25",
-      "tags": [
-        "GraphQL",
-        "Node.js",
-        "Back-end"
-      ],
-      "genres": [
-        "GraphQL",
-        "Node.js",
-        "Back-end"
-      ],
+      "title": "Manipulando Dados e Objetos com .NET",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-24",
+      "tags": [],
+      "genres": [],
       "image": "certificados/25.webp",
-      "description": "APIs modernas com GraphQL e Node.js.",
+      "description": "carga horária de 14 horas.",
       "featured": false
     },
     {
       "id": 25,
-      "title": "Figma para Desenvolvedores",
-      "director": "Alura",
-      "year": "2024-10-03",
-      "tags": [
-        "Figma",
-        "UI/UX",
-        "Design"
-      ],
-      "genres": [
-        "Figma",
-        "UI/UX",
-        "Design"
-      ],
+      "title": "Construindo um sistema de Hospedagem de um Hotel con C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-24",
+      "tags": [],
+      "genres": [],
       "image": "certificados/26.webp",
-      "description": "Design de interfaces e prototipação com Figma.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
       "id": 26,
-      "title": "C# e .NET Core",
-      "director": "Microsoft Learn",
-      "year": "2024-10-10",
-      "tags": [
-        "C#",
-        ".NET",
-        "Back-end"
-      ],
-      "genres": [
-        "C#",
-        ".NET",
-        "Back-end"
-      ],
+      "title": "Classes Abstratas e Interfaces com C#",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-04-25",
+      "tags": [],
+      "genres": [],
       "image": "certificados/27.webp",
-      "description": "Desenvolvimento com C# e .NET Core.",
+      "description": "carga horária de 3 horas.",
       "featured": false
     },
     {
       "id": 27,
-      "title": "Scrum e Metodologias Ágeis",
+      "title": "Introdução Banco de Dados",
       "director": "Digital Innovation One (DIO)",
-      "year": "2024-10-17",
-      "tags": [
-        "Scrum",
-        "Agile",
-        "Gestão"
-      ],
-      "genres": [
-        "Scrum",
-        "Agile",
-        "Gestão"
-      ],
+      "year": "2024-04-26",
+      "tags": [],
+      "genres": [],
       "image": "certificados/28.webp",
-      "description": "Gestão de projetos com Scrum, Kanban e metodologias ágeis.",
+      "description": "carga horária de 2 horas.",
       "featured": false
     },
     {
