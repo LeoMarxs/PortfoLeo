@@ -1319,7 +1319,18 @@
       "image": "certificados/121.webp",
       "description": "carga horária de 1 hora,",
       "featured": false
+    },
+    {
+      "id": 121,
+      "title": "Desafio 05 | DIO Campus Expert - Turma 09",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2024-09-13",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/122.webp",
+      "description": "carga horária de 1 hora,",
+      "featured": false
     }
   ],
-  "nextId": 121
+  "nextId": 122
 }
