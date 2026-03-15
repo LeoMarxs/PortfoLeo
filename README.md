@@ -4,7 +4,7 @@
 
 **Sua coleção de certificados, organizada com estilo.**
 
-![PortFoleo Banner](https://images.unsplash.com/photo-1574267432644-f65e5e2e8cb1?w=1200&h=300&fit=crop)
+![PortFoleo Banner](img/inicio.jpeg)
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Hospedado-222222?style=for-the-badge&logo=github)](https://leomarxs.github.io/PortfoLeo/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
