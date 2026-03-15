@@ -1072,16 +1072,8 @@
       "title": "Design Patterns com Java",
       "director": "Alura",
       "year": "2021-05-21",
-      "tags": [
-        "Design Patterns",
-        "Java",
-        "POO"
-      ],
-      "genres": [
-        "Design Patterns",
-        "Java",
-        "POO"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/99.webp",
       "description": "Padrões de projeto clássicos aplicados em Java.",
       "featured": false
@@ -1091,16 +1083,8 @@
       "title": "Acessibilidade Web (WCAG)",
       "director": "Udemy",
       "year": "2021-06-04",
-      "tags": [
-        "Acessibilidade",
-        "WCAG",
-        "Front-end"
-      ],
-      "genres": [
-        "Acessibilidade",
-        "WCAG",
-        "Front-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/100.webp",
       "description": "Boas práticas de acessibilidade web com WCAG 2.1.",
       "featured": false
@@ -1110,16 +1094,8 @@
       "title": "Firebase para Web",
       "director": "Google Developers",
       "year": "2021-06-18",
-      "tags": [
-        "Firebase",
-        "BaaS",
-        "Front-end"
-      ],
-      "genres": [
-        "Firebase",
-        "BaaS",
-        "Front-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/101.webp",
       "description": "Banco de dados em tempo real e autenticação com Firebase.",
       "featured": false
@@ -1129,16 +1105,8 @@
       "title": "PySpark para Engenharia de Dados",
       "director": "Coursera",
       "year": "2021-07-02",
-      "tags": [
-        "PySpark",
-        "Engenharia de Dados",
-        "Python"
-      ],
-      "genres": [
-        "PySpark",
-        "Engenharia de Dados",
-        "Python"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/102.webp",
       "description": "Engenharia de dados distribuída com PySpark.",
       "featured": false
@@ -1148,16 +1116,8 @@
       "title": "Microsserviços com Docker Swarm",
       "director": "Digital Innovation One (DIO)",
       "year": "2021-07-16",
-      "tags": [
-        "Docker Swarm",
-        "Microsserviços",
-        "DevOps"
-      ],
-      "genres": [
-        "Docker Swarm",
-        "Microsserviços",
-        "DevOps"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/103.webp",
       "description": "Orquestração de containers com Docker Swarm.",
       "featured": false
@@ -1167,16 +1127,8 @@
       "title": "Lógica de Programação do Zero",
       "director": "Alura",
       "year": "2021-07-30",
-      "tags": [
-        "Lógica",
-        "Fundamentos",
-        "Iniciante"
-      ],
-      "genres": [
-        "Lógica",
-        "Fundamentos",
-        "Iniciante"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/104.webp",
       "description": "Introdução à lógica de programação para iniciantes.",
       "featured": false
@@ -1186,16 +1138,8 @@
       "title": "Strapi Headless CMS",
       "director": "Udemy",
       "year": "2021-08-13",
-      "tags": [
-        "Strapi",
-        "CMS",
-        "Back-end"
-      ],
-      "genres": [
-        "Strapi",
-        "CMS",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/105.webp",
       "description": "Criação de CMS headless com Strapi.",
       "featured": false
@@ -1205,16 +1149,8 @@
       "title": "WebAssembly (WASM)",
       "director": "Rocketseat",
       "year": "2021-08-27",
-      "tags": [
-        "WebAssembly",
-        "Front-end",
-        "Performance"
-      ],
-      "genres": [
-        "WebAssembly",
-        "Front-end",
-        "Performance"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/106.webp",
       "description": "Alto desempenho no navegador com WebAssembly.",
       "featured": false
@@ -1224,16 +1160,8 @@
       "title": "Análise de Sentimentos com IA",
       "director": "Coursera",
       "year": "2021-09-10",
-      "tags": [
-        "NLP",
-        "IA",
-        "Sentimentos"
-      ],
-      "genres": [
-        "NLP",
-        "IA",
-        "Sentimentos"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/107.webp",
       "description": "Análise de sentimentos em textos com modelos de NLP.",
       "featured": false
@@ -1243,16 +1171,8 @@
       "title": "Jenkins para CI/CD",
       "director": "Digital Innovation One (DIO)",
       "year": "2021-09-24",
-      "tags": [
-        "Jenkins",
-        "CI/CD",
-        "DevOps"
-      ],
-      "genres": [
-        "Jenkins",
-        "CI/CD",
-        "DevOps"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/108.webp",
       "description": "Automação de build e deploy com Jenkins.",
       "featured": false
@@ -1262,16 +1182,8 @@
       "title": "FastAPI com Python",
       "director": "Alura",
       "year": "2021-10-08",
-      "tags": [
-        "FastAPI",
-        "Python",
-        "Back-end"
-      ],
-      "genres": [
-        "FastAPI",
-        "Python",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/109.webp",
       "description": "APIs de alto desempenho com FastAPI e Python.",
       "featured": false
@@ -1281,16 +1193,8 @@
       "title": "Realidade Aumentada com ARKit",
       "director": "Apple Developer",
       "year": "2021-10-22",
-      "tags": [
-        "ARKit",
-        "AR",
-        "iOS"
-      ],
-      "genres": [
-        "ARKit",
-        "AR",
-        "iOS"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/110.webp",
       "description": "Desenvolvimento de experiências de realidade aumentada com ARKit.",
       "featured": false
@@ -1300,16 +1204,8 @@
       "title": "COBOL Legado",
       "director": "IBM",
       "year": "2021-11-05",
-      "tags": [
-        "COBOL",
-        "Legado",
-        "Mainframe"
-      ],
-      "genres": [
-        "COBOL",
-        "Legado",
-        "Mainframe"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/111.webp",
       "description": "Manutenção e modernização de sistemas legados em COBOL.",
       "featured": false
@@ -1319,16 +1215,8 @@
       "title": "Automação com RPA e UiPath",
       "director": "UiPath",
       "year": "2021-11-19",
-      "tags": [
-        "RPA",
-        "Automação",
-        "UiPath"
-      ],
-      "genres": [
-        "RPA",
-        "Automação",
-        "UiPath"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/112.webp",
       "description": "Automação de processos com UiPath e RPA.",
       "featured": false
@@ -1338,16 +1226,8 @@
       "title": "Comunicação Técnica e Documentação",
       "director": "Coursera",
       "year": "2021-12-03",
-      "tags": [
-        "Documentação",
-        "Comunicação",
-        "Soft Skills"
-      ],
-      "genres": [
-        "Documentação",
-        "Comunicação",
-        "Soft Skills"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/113.webp",
       "description": "Escrita técnica e boas práticas de documentação para devs.",
       "featured": false
@@ -1357,16 +1237,8 @@
       "title": "Unreal Engine Básico",
       "director": "Epic Games",
       "year": "2021-12-17",
-      "tags": [
-        "Unreal Engine",
-        "Game Dev",
-        "C++"
-      ],
-      "genres": [
-        "Unreal Engine",
-        "Game Dev",
-        "C++"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/114.webp",
       "description": "Introdução ao desenvolvimento de jogos com Unreal Engine.",
       "featured": false
@@ -1376,16 +1248,8 @@
       "title": "SRE - Site Reliability Engineering",
       "director": "Google",
       "year": "2020-01-10",
-      "tags": [
-        "SRE",
-        "DevOps",
-        "Confiabilidade"
-      ],
-      "genres": [
-        "SRE",
-        "DevOps",
-        "Confiabilidade"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/115.webp",
       "description": "Engenharia de confiabilidade de sites e sistemas críticos.",
       "featured": false
@@ -1395,16 +1259,8 @@
       "title": "Arquitetura Hexagonal",
       "director": "Rocketseat",
       "year": "2020-01-24",
-      "tags": [
-        "Hexagonal",
-        "Arquitetura",
-        "Back-end"
-      ],
-      "genres": [
-        "Hexagonal",
-        "Arquitetura",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/116.webp",
       "description": "Arquitetura de software hexagonal (ports and adapters).",
       "featured": false
@@ -1414,16 +1270,8 @@
       "title": "Pandas Avançado",
       "director": "Alura",
       "year": "2020-02-07",
-      "tags": [
-        "Pandas",
-        "Python",
-        "Data Science"
-      ],
-      "genres": [
-        "Pandas",
-        "Python",
-        "Data Science"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/117.webp",
       "description": "Manipulação avançada de dados com Pandas.",
       "featured": false
@@ -1433,16 +1281,8 @@
       "title": "OpenAI API Integration",
       "director": "Digital Innovation One (DIO)",
       "year": "2020-02-21",
-      "tags": [
-        "OpenAI",
-        "IA",
-        "API"
-      ],
-      "genres": [
-        "OpenAI",
-        "IA",
-        "API"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/118.webp",
       "description": "Integração com a API da OpenAI para aplicações inteligentes.",
       "featured": false
@@ -1452,16 +1292,8 @@
       "title": "Deno Runtime",
       "director": "Udemy",
       "year": "2020-03-06",
-      "tags": [
-        "Deno",
-        "JavaScript",
-        "Back-end"
-      ],
-      "genres": [
-        "Deno",
-        "JavaScript",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/119.webp",
       "description": "Runtime moderno Deno para JavaScript e TypeScript.",
       "featured": false
@@ -1471,16 +1303,8 @@
       "title": "Inteligência Emocional para Devs",
       "director": "Coursera",
       "year": "2020-03-20",
-      "tags": [
-        "Soft Skills",
-        "Inteligência Emocional",
-        "Carreira"
-      ],
-      "genres": [
-        "Soft Skills",
-        "Inteligência Emocional",
-        "Carreira"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/120.webp",
       "description": "Desenvolvimento de inteligência emocional para profissionais de TI.",
       "featured": false
@@ -1490,16 +1314,8 @@
       "title": "Event-Driven Architecture",
       "director": "Rocketseat",
       "year": "2020-04-03",
-      "tags": [
-        "Event-Driven",
-        "Arquitetura",
-        "Back-end"
-      ],
-      "genres": [
-        "Event-Driven",
-        "Arquitetura",
-        "Back-end"
-      ],
+      "tags": [],
+      "genres": [],
       "image": "certificados/121.webp",
       "description": "Arquitetura orientada a eventos com filas e mensageria.",
       "featured": false
