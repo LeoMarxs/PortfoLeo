@@ -190,9 +190,24 @@ https://leomarxs.github.io/__PortfoLeo__/
 ---
 
 ## 📜 Licença
-
-Este projeto é de uso pessoal. Sinta-se livre para adaptar para o seu próprio portfólio.
-
+ 
+Este projeto está sob a licença **MIT**. Isso significa que você pode usar, copiar, modificar e distribuir livremente, desde que mantenha o aviso de copyright original.
+ 
+```
+MIT License
+ 
+Copyright (c) 2024 Leonardo Henrique Marques De Jesus
+ 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+ 
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
 ---
 
 <div align="center">
