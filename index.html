@@ -727,7 +727,7 @@
 <!-- ─── NAVBAR ─── -->
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="#"><i class="fas fa-film me-1"></i>PortFoleo</a>
+        <a class="navbar-brand" href="#"><i class="fas fa-certificate me-1"></i>PortFoleo</a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -850,7 +850,7 @@
 </div>
 
 <!-- ─── MODAL: ADD/EDIT ─── -->
-<div class="modal fade" id="movieModal" tabindex="-1">
+<div class="modal fade" id="certModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
@@ -858,19 +858,19 @@
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <form id="movieForm" novalidate>
-                    <input type="hidden" id="movieId">
+                <form id="certForm" novalidate>
+                    <input type="hidden" id="certId">
                     <div class="mb-3">
                         <label class="form-label">Curso *</label>
-                        <input type="text" class="form-control" id="movieTitle" required placeholder="Nome do curso ou certificação">
+                        <input type="text" class="form-control" id="certTitle" required placeholder="Nome do curso ou certificação">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Instituição *</label>
-                        <input type="text" class="form-control" id="movieDirector" required placeholder="Ex: Udemy, Coursera, FIAP...">
+                        <input type="text" class="form-control" id="certDirector" required placeholder="Ex: Udemy, Coursera, FIAP...">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Data *</label>
-                        <input type="date" class="form-control" id="movieYear" required>
+                        <input type="date" class="form-control" id="certYear" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Tags</label>
@@ -882,34 +882,34 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Imagem do Certificado</label>
-                        <input type="file" class="form-control mb-2" id="movieImageUpload" accept="image/*" onchange="handleImageUpload(event)">
+                        <input type="file" class="form-control mb-2" id="certImageUpload" accept="image/*" onchange="handleImageUpload(event)">
                         <small class="text-muted" style="font-size:0.78rem;">Imagem comprimida automaticamente para otimizar armazenamento</small>
                         <label class="form-label mt-2">Ou URL externa:</label>
-                        <input type="text" class="form-control" id="movieImage" placeholder="https://..." oninput="previewFromUrl()">
+                        <input type="text" class="form-control" id="certImage" placeholder="https://..." oninput="previewFromUrl()">
                         <div id="imagePreview" style="display:none; margin-top:10px;">
                             <img id="previewImg" alt="Preview">
                         </div>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Descrição *</label>
-                        <textarea class="form-control" id="movieDescription" rows="3" required placeholder="O que você aprendeu?"></textarea>
+                        <textarea class="form-control" id="certDescription" rows="3" required placeholder="O que você aprendeu?"></textarea>
                     </div>
                     <div class="mb-1 form-check">
-                        <input type="checkbox" class="form-check-input" id="movieFeatured">
-                        <label class="form-check-label" for="movieFeatured" style="font-size:0.88rem; color:var(--text-muted);">Marcar como destaque</label>
+                        <input type="checkbox" class="form-check-input" id="certFeatured">
+                        <label class="form-check-label" for="certFeatured" style="font-size:0.88rem; color:var(--text-muted);">Marcar como destaque</label>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn-save" onclick="saveMovie()">Salvar</button>
+                <button type="button" class="btn-save" onclick="saveCert()">Salvar</button>
             </div>
         </div>
     </div>
 </div>
 
 <!-- ─── MODAL: DETAIL ─── -->
-<div class="modal fade detail-modal" id="movieDetailModal" tabindex="-1">
+<div class="modal fade detail-modal" id="certDetailModal" tabindex="-1">
     <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
@@ -931,13 +931,13 @@
                         <h6 class="text-muted mb-2" style="font-size:0.82rem; text-transform:uppercase; letter-spacing:1px;">Descrição</h6>
                         <p id="detailDescription" style="font-size:0.92rem; color:var(--text-muted); line-height:1.7;"></p>
                         <div class="d-flex gap-2 mt-4 flex-wrap">
-                            <button class="btn-action primary" style="flex:0 0 auto; padding: 0.5rem 1rem;" onclick="editMovieFromDetail()">
+                            <button class="btn-action primary" style="flex:0 0 auto; padding: 0.5rem 1rem;" onclick="editCertFromDetail()">
                                 <i class="fas fa-edit me-1"></i>Editar
                             </button>
                             <button class="btn-action" style="flex:0 0 auto; padding: 0.5rem 1rem;" onclick="shareFromDetail()">
                                 <i class="fas fa-share me-1"></i>Compartilhar
                             </button>
-                            <button class="btn-action danger" style="flex:0 0 auto; padding: 0.5rem 1rem;" onclick="deleteMovieFromDetail()">
+                            <button class="btn-action danger" style="flex:0 0 auto; padding: 0.5rem 1rem;" onclick="deleteCertFromDetail()">
                                 <i class="fas fa-trash me-1"></i>Remover
                             </button>
                         </div>
@@ -990,10 +990,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script>
     // ─── STATE ───
-    let movies = [];
+    let certificates = [];
     let nextId = 1;
     let currentPage = 'home';
-    let currentMovieDetailId = null;
+    let currentCertDetailId = null;
     let catalogCurrentPage = 1;
     let itemsPerPage = 9;
     let sortOrder = 'date-desc';
@@ -1053,13 +1053,13 @@
     // Esta função busca o arquivo certificates.json e carrega os certificados.
     // Se o localStorage já tiver dados salvos, usa eles (prioridade).
     // Use "Gerenciar → Recarregar JSON" para forçar a leitura do JSON novamente.
-    async function loadMoviesFromStorage() {
+    async function loadCertificatesFromStorage() {
         try {
             const saved = localStorage.getItem('portfoleo-certificates');
             if (saved) {
                 // Dados já existem no localStorage, usa eles
                 const data = JSON.parse(saved);
-                movies = data.movies || [];
+                certificates = data.movies || [];
                 nextId = data.nextId || 1;
             } else {
                 // Nenhum dado no localStorage → tenta carregar do JSON
@@ -1078,10 +1078,10 @@
             if (!response.ok) throw new Error(`Arquivo ${JSON_FILE} não encontrado (${response.status})`);
             const data = await response.json();
             if (!data.movies || !Array.isArray(data.movies)) throw new Error('Formato do JSON inválido');
-            movies = data.movies;
-            nextId = data.nextId || (movies.length + 1);
-            saveMoviesToStorage(); // salva no localStorage para próximas visitas
-            showToast(`${movies.length} certificado(s) carregado(s) do JSON!`);
+            certificates = data.movies;
+            nextId = data.nextId || (certificates.length + 1);
+            saveCertificatesToStorage(); // salva no localStorage para próximas visitas
+            showToast(`${certificates.length} certificado(s) carregado(s) do JSON!`);
         } catch (e) {
             console.warn('Não foi possível carregar o JSON:', e.message);
             initializeDefaultData();
@@ -1092,15 +1092,15 @@
     async function reloadFromJson() {
         if (!confirm('Isso vai substituir os dados atuais pelos do arquivo certificates.json. Continuar?')) return;
         localStorage.removeItem('portfoleo-certificates');
-        movies = [];
+        certificates = [];
         nextId = 1;
         await loadFromJsonFile();
         refresh();
     }
 
-    function saveMoviesToStorage() {
+    function saveCertificatesToStorage() {
         try {
-            const data = { movies, nextId, lastUpdate: new Date().toISOString() };
+            const data = { movies: certificates, nextId, lastUpdate: new Date().toISOString() };
             localStorage.setItem('portfoleo-certificates', JSON.stringify(data));
             checkStorageSpace();
             return true;
@@ -1115,9 +1115,9 @@
     }
 
     function initializeDefaultData() {
-        movies = [];
+        certificates = [];
         nextId = 1;
-        saveMoviesToStorage();
+        saveCertificatesToStorage();
     }
 
     // ─── NAVIGATION ───
@@ -1143,7 +1143,7 @@
     // ─── TAGS HELPERS ───
     function getAllTags() {
         const set = new Set();
-        movies.forEach(m => (m.tags || m.genres || []).forEach(t => set.add(t)));
+        certificates.forEach(m => (m.tags || m.genres || []).forEach(t => set.add(t)));
         return [...set].sort();
     }
 
@@ -1156,12 +1156,12 @@
     // ─── HOME RENDER ───
     function renderHome() {
         const tags = getAllTags();
-        const institutions = [...new Set(movies.map(m => m.director))];
-        const years = [...new Set(movies.map(m => m.year ? m.year.split('-')[0] : null).filter(Boolean))];
+        const institutions = [...new Set(certificates.map(m => m.director))];
+        const years = [...new Set(certificates.map(m => m.year ? m.year.split('-')[0] : null).filter(Boolean))];
 
         document.getElementById('statsBar').innerHTML = `
             <div class="stat-chip" onclick="showCatalog()">
-                <div class="stat-number">${movies.length}</div>
+                <div class="stat-number">${certificates.length}</div>
                 <div class="stat-label">Certificados</div>
             </div>
             <div class="stat-chip" onclick="showStats()">
@@ -1178,7 +1178,7 @@
             </div>
         `;
 
-        const featured = movies.filter(m => m.featured);
+        const featured = certificates.filter(m => m.featured);
         if (featured.length === 0) {
             document.getElementById('featuredGrid').innerHTML = `
                 <div class="empty-state" style="grid-column:1/-1;">
@@ -1201,7 +1201,7 @@
             ${tags.map(t => `<button class="tag-filter-btn ${activeTagFilter === t ? 'active' : ''}" onclick="setTagFilter('${t.replace(/'/g, "\\'")}')">${t}</button>`).join('')}
         `;
 
-        let filtered = movies.filter(m => {
+        let filtered = certificates.filter(m => {
             const q = searchQuery.toLowerCase();
             const matchSearch = !q ||
                 m.title.toLowerCase().includes(q) ||
@@ -1243,36 +1243,36 @@
         renderPagination(total);
     }
 
-    function createCard(movie) {
-        const tags = (movie.tags || movie.genres || []);
+    function createCard(cert) {
+        const tags = (cert.tags || cert.genres || []);
         const tagHtml = tags.map(t => `<span class="cert-tag">${t}</span>`).join('');
-        const dateStr = formatDate(movie.year);
-        const imgSrc = movie.image || 'https://via.placeholder.com/400x220?text=Sem+Imagem';
+        const dateStr = formatDate(cert.year);
+        const imgSrc = cert.image || 'https://via.placeholder.com/400x220?text=Sem+Imagem';
 
         return `
             <div class="cert-card">
                 <div class="cert-card-img-wrap">
-                    <img src="${imgSrc}" alt="${movie.title}" class="cert-card-img movie-image-clickable" data-movie-id="${movie.id}">
-                    ${movie.featured ? '<span class="featured-badge"><i class="fas fa-star me-1"></i>Destaque</span>' : ''}
+                    <img src="${imgSrc}" alt="${cert.title}" class="cert-card-img cert-image-clickable" data-cert-id="${cert.id}">
+                    ${cert.featured ? '<span class="featured-badge"><i class="fas fa-star me-1"></i>Destaque</span>' : ''}
                 </div>
                 <div class="cert-card-body">
-                    <div class="cert-title">${movie.title}</div>
-                    <div class="cert-meta"><i class="fas fa-building me-1"></i>${movie.director} · ${dateStr}</div>
+                    <div class="cert-title">${cert.title}</div>
+                    <div class="cert-meta"><i class="fas fa-building me-1"></i>${cert.director} · ${dateStr}</div>
                     <div class="cert-tags">${tagHtml}</div>
-                    <div class="cert-desc">${movie.description}</div>
+                    <div class="cert-desc">${cert.description}</div>
                     <div class="cert-actions">
-                        <button class="btn-action primary" onclick="editMovie(${movie.id})"><i class="fas fa-edit me-1"></i>Editar</button>
-                        <button class="btn-action" onclick="openShareModal(${movie.id})"><i class="fas fa-share me-1"></i></button>
-                        <button class="btn-action danger" onclick="deleteMovie(${movie.id})"><i class="fas fa-trash me-1"></i></button>
+                        <button class="btn-action primary" onclick="editCert(${cert.id})"><i class="fas fa-edit me-1"></i>Editar</button>
+                        <button class="btn-action" onclick="openShareModal(${cert.id})"><i class="fas fa-share me-1"></i></button>
+                        <button class="btn-action danger" onclick="deleteCert(${cert.id})"><i class="fas fa-trash me-1"></i></button>
                     </div>
                 </div>
             </div>`;
     }
 
     function attachCardEvents() {
-        document.querySelectorAll('.movie-image-clickable').forEach(img => {
+        document.querySelectorAll('.cert-image-clickable').forEach(img => {
             img.addEventListener('click', function () {
-                showMovieDetail(parseInt(this.getAttribute('data-movie-id')));
+                showCertDetail(parseInt(this.getAttribute('data-cert-id')));
             });
         });
     }
@@ -1302,7 +1302,7 @@
     }
 
     function goToPage(page) {
-        const totalPages = Math.ceil(movies.length / itemsPerPage);
+        const totalPages = Math.ceil(certificates.length / itemsPerPage);
         if (page < 1 || page > totalPages) return;
         catalogCurrentPage = page;
         renderCatalog();
@@ -1380,36 +1380,36 @@
     // ─── ADD/EDIT MODAL ───
     function openAddModal() {
         document.getElementById('modalTitle').textContent = 'Adicionar Certificado';
-        document.getElementById('movieForm').reset();
-        document.getElementById('movieId').value = '';
+        document.getElementById('certForm').reset();
+        document.getElementById('certId').value = '';
         document.getElementById('imagePreview').style.display = 'none';
-        document.getElementById('movieImageUpload').value = '';
+        document.getElementById('certImageUpload').value = '';
         currentTags = [];
         renderTagPills();
-        new bootstrap.Modal(document.getElementById('movieModal')).show();
+        new bootstrap.Modal(document.getElementById('certModal')).show();
     }
 
-    function editMovie(id) {
-        const movie = movies.find(m => m.id === id);
-        if (!movie) return;
+    function editCert(id) {
+        const cert = certificates.find(m => m.id === id);
+        if (!cert) return;
         document.getElementById('modalTitle').textContent = 'Editar Certificado';
-        document.getElementById('movieId').value = movie.id;
-        document.getElementById('movieTitle').value = movie.title;
-        document.getElementById('movieDirector').value = movie.director;
-        document.getElementById('movieYear').value = movie.year;
-        document.getElementById('movieImage').value = movie.image || '';
-        document.getElementById('movieDescription').value = movie.description;
-        document.getElementById('movieFeatured').checked = movie.featured;
-        if (movie.image) {
-            document.getElementById('previewImg').src = movie.image;
+        document.getElementById('certId').value = cert.id;
+        document.getElementById('certTitle').value = cert.title;
+        document.getElementById('certDirector').value = cert.director;
+        document.getElementById('certYear').value = cert.year;
+        document.getElementById('certImage').value = cert.image || '';
+        document.getElementById('certDescription').value = cert.description;
+        document.getElementById('certFeatured').checked = cert.featured;
+        if (cert.image) {
+            document.getElementById('previewImg').src = cert.image;
             document.getElementById('imagePreview').style.display = 'block';
         } else {
             document.getElementById('imagePreview').style.display = 'none';
         }
-        document.getElementById('movieImageUpload').value = '';
-        currentTags = [...(movie.tags || movie.genres || [])];
+        document.getElementById('certImageUpload').value = '';
+        currentTags = [...(cert.tags || cert.genres || [])];
         renderTagPills();
-        new bootstrap.Modal(document.getElementById('movieModal')).show();
+        new bootstrap.Modal(document.getElementById('certModal')).show();
     }
 
     async function handleImageUpload(event) {
@@ -1421,7 +1421,7 @@
         reader.onload = async function (e) {
             try {
                 const compressed = await compressImage(e.target.result);
-                document.getElementById('movieImage').value = compressed;
+                document.getElementById('certImage').value = compressed;
                 document.getElementById('previewImg').src = compressed;
                 document.getElementById('imagePreview').style.display = 'block';
             } catch { showToast('Erro ao processar imagem.', 'error'); }
@@ -1430,7 +1430,7 @@
     }
 
     function previewFromUrl() {
-        const url = document.getElementById('movieImage').value.trim();
+        const url = document.getElementById('certImage').value.trim();
         if (url) {
             document.getElementById('previewImg').src = url;
             document.getElementById('imagePreview').style.display = 'block';
@@ -1439,45 +1439,45 @@
         }
     }
 
-    function saveMovie() {
-        const form = document.getElementById('movieForm');
+    function saveCert() {
+        const form = document.getElementById('certForm');
         if (!form.checkValidity()) { form.reportValidity(); return; }
-        const movieImage = document.getElementById('movieImage').value.trim();
-        if (!movieImage) { showToast('Adicione uma imagem (upload ou URL).', 'error'); return; }
+        const certImage = document.getElementById('certImage').value.trim();
+        if (!certImage) { showToast('Adicione uma imagem (upload ou URL).', 'error'); return; }
 
-        const id = document.getElementById('movieId').value;
-        const movieData = {
-            title: document.getElementById('movieTitle').value.trim(),
-            director: document.getElementById('movieDirector').value.trim(),
-            year: document.getElementById('movieYear').value,
+        const id = document.getElementById('certId').value;
+        const certData = {
+            title: document.getElementById('certTitle').value.trim(),
+            director: document.getElementById('certDirector').value.trim(),
+            year: document.getElementById('certYear').value,
             tags: [...currentTags],
             genres: [...currentTags],
-            image: movieImage,
-            description: document.getElementById('movieDescription').value.trim(),
-            featured: document.getElementById('movieFeatured').checked
+            image: certImage,
+            description: document.getElementById('certDescription').value.trim(),
+            featured: document.getElementById('certFeatured').checked
         };
 
         if (id) {
-            const idx = movies.findIndex(m => m.id === parseInt(id));
-            if (idx !== -1) movies[idx] = { ...movies[idx], ...movieData };
+            const idx = certificates.findIndex(m => m.id === parseInt(id));
+            if (idx !== -1) certificates[idx] = { ...certificates[idx], ...certData };
         } else {
-            movies.push({ id: nextId++, ...movieData });
+            certificates.push({ id: nextId++, ...certData });
         }
 
-        if (!saveMoviesToStorage()) {
-            if (!id) { movies.pop(); nextId--; } else loadMoviesFromStorage();
+        if (!saveCertificatesToStorage()) {
+            if (!id) { certificates.pop(); nextId--; } else loadCertificatesFromStorage();
             return;
         }
 
-        bootstrap.Modal.getInstance(document.getElementById('movieModal')).hide();
+        bootstrap.Modal.getInstance(document.getElementById('certModal')).hide();
         showToast(id ? 'Certificado atualizado!' : 'Certificado adicionado!');
         refresh();
     }
 
-    function deleteMovie(id) {
+    function deleteCert(id) {
         if (!confirm('Tem certeza que deseja remover este certificado?')) return;
-        movies = movies.filter(m => m.id !== id);
-        saveMoviesToStorage();
+        certificates = certificates.filter(m => m.id !== id);
+        saveCertificatesToStorage();
         showToast('Certificado removido.');
         refresh();
     }
@@ -1488,62 +1488,62 @@
     }
 
     // ─── DETAIL MODAL ───
-    function showMovieDetail(id) {
-        const movie = movies.find(m => m.id === id);
-        if (!movie) return;
-        currentMovieDetailId = id;
+    function showCertDetail(id) {
+        const cert = certificates.find(m => m.id === id);
+        if (!cert) return;
+        currentCertDetailId = id;
 
-        const tags = (movie.tags || movie.genres || []);
-        document.getElementById('detailImage').src = movie.image || '';
-        document.getElementById('detailTitle').textContent = movie.title;
-        document.getElementById('detailDirector').textContent = movie.director;
-        document.getElementById('detailYear').textContent = formatDate(movie.year);
+        const tags = (cert.tags || cert.genres || []);
+        document.getElementById('detailImage').src = cert.image || '';
+        document.getElementById('detailTitle').textContent = cert.title;
+        document.getElementById('detailDirector').textContent = cert.director;
+        document.getElementById('detailYear').textContent = formatDate(cert.year);
         document.getElementById('detailTags').innerHTML = tags.map(t => `<span class="cert-tag">${t}</span>`).join('');
-        document.getElementById('detailDescription').textContent = movie.description;
+        document.getElementById('detailDescription').textContent = cert.description;
 
-        new bootstrap.Modal(document.getElementById('movieDetailModal')).show();
+        new bootstrap.Modal(document.getElementById('certDetailModal')).show();
     }
 
-    function editMovieFromDetail() {
-        bootstrap.Modal.getInstance(document.getElementById('movieDetailModal')).hide();
-        setTimeout(() => editMovie(currentMovieDetailId), 300);
+    function editCertFromDetail() {
+        bootstrap.Modal.getInstance(document.getElementById('certDetailModal')).hide();
+        setTimeout(() => editCert(currentCertDetailId), 300);
     }
 
-    function deleteMovieFromDetail() {
-        bootstrap.Modal.getInstance(document.getElementById('movieDetailModal')).hide();
-        setTimeout(() => deleteMovie(currentMovieDetailId), 300);
+    function deleteCertFromDetail() {
+        bootstrap.Modal.getInstance(document.getElementById('certDetailModal')).hide();
+        setTimeout(() => deleteCert(currentCertDetailId), 300);
     }
 
     function shareFromDetail() {
-        bootstrap.Modal.getInstance(document.getElementById('movieDetailModal')).hide();
-        setTimeout(() => openShareModal(currentMovieDetailId), 300);
+        bootstrap.Modal.getInstance(document.getElementById('certDetailModal')).hide();
+        setTimeout(() => openShareModal(currentCertDetailId), 300);
     }
 
     // ─── SHARE ───
     function openShareModal(id) {
-        const movie = movies.find(m => m.id === id);
-        if (!movie) return;
-        currentMovieDetailId = id;
-        document.getElementById('sharePreviewImg').src = movie.image || '';
+        const cert = certificates.find(m => m.id === id);
+        if (!cert) return;
+        currentCertDetailId = id;
+        document.getElementById('sharePreviewImg').src = cert.image || '';
         document.getElementById('shareText').textContent =
-            `🎓 ${movie.title} — ${movie.director} (${formatDate(movie.year)})`;
+            `🎓 ${cert.title} — ${cert.director} (${formatDate(cert.year)})`;
         new bootstrap.Modal(document.getElementById('shareModal')).show();
     }
 
     function downloadShareImage() {
-        const movie = movies.find(m => m.id === currentMovieDetailId);
-        if (!movie || !movie.image) { showToast('Nenhuma imagem para baixar.', 'error'); return; }
+        const cert = certificates.find(m => m.id === currentCertDetailId);
+        if (!cert || !cert.image) { showToast('Nenhuma imagem para baixar.', 'error'); return; }
         const a = document.createElement('a');
-        a.href = movie.image;
-        a.download = `${movie.title.replace(/\s+/g, '_')}_certificado.jpg`;
+        a.href = cert.image;
+        a.download = `${cert.title.replace(/\s+/g, '_')}_certificado.jpg`;
         a.click();
         showToast('Download iniciado!');
     }
 
     function copyShareText() {
-        const movie = movies.find(m => m.id === currentMovieDetailId);
-        if (!movie) return;
-        const text = `🎓 Acabei de concluir: ${movie.title}\n🏫 Instituição: ${movie.director}\n📅 ${formatDate(movie.year)}\n#PortFoleo #Certificado`;
+        const cert = certificates.find(m => m.id === currentCertDetailId);
+        if (!cert) return;
+        const text = `🎓 Acabei de concluir: ${cert.title}\n🏫 Instituição: ${cert.director}\n📅 ${formatDate(cert.year)}\n#PortFoleo #Certificado`;
         navigator.clipboard.writeText(text).then(() => showToast('Texto copiado!')).catch(() => showToast('Erro ao copiar.', 'error'));
     }
 
@@ -1552,11 +1552,11 @@
         const body = document.getElementById('statsBody');
 
         const instCount = {};
-        movies.forEach(m => { instCount[m.director] = (instCount[m.director] || 0) + 1; });
+        certificates.forEach(m => { instCount[m.director] = (instCount[m.director] || 0) + 1; });
         const instSorted = Object.entries(instCount).sort((a, b) => b[1] - a[1]);
 
         const yearCount = {};
-        movies.forEach(m => {
+        certificates.forEach(m => {
             if (m.year) {
                 const y = m.year.split('-')[0];
                 yearCount[y] = (yearCount[y] || 0) + 1;
@@ -1565,7 +1565,7 @@
         const yearSorted = Object.entries(yearCount).sort((a, b) => b[0] - a[0]);
 
         const tagCount = {};
-        movies.forEach(m => (m.tags || m.genres || []).forEach(t => { tagCount[t] = (tagCount[t] || 0) + 1; }));
+        certificates.forEach(m => (m.tags || m.genres || []).forEach(t => { tagCount[t] = (tagCount[t] || 0) + 1; }));
         const tagSorted = Object.entries(tagCount).sort((a, b) => b[1] - a[1]);
 
         const maxInst = instSorted[0]?.[1] || 1;
@@ -1595,7 +1595,7 @@
 
     // ─── EXPORT / IMPORT / CLEAR ───
     function exportData() {
-        const blob = new Blob([JSON.stringify({ movies, nextId, exportDate: new Date().toISOString() }, null, 2)], { type: 'application/json' });
+        const blob = new Blob([JSON.stringify({ movies: certificates, nextId, exportDate: new Date().toISOString() }, null, 2)], { type: 'application/json' });
         const a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
         a.download = `portfoleo-backup-${new Date().toISOString().split('T')[0]}.json`;
@@ -1612,10 +1612,10 @@
             try {
                 const data = JSON.parse(e.target.result);
                 if (!data.movies || !Array.isArray(data.movies)) throw new Error('Formato inválido');
-                if (!confirm(`Importar ${data.movies.length} certificados? Isso substituirá os dados atuais.`)) return;
-                movies = data.movies;
-                nextId = data.nextId || movies.length + 1;
-                if (saveMoviesToStorage()) { refresh(); showToast(`${movies.length} certificados importados!`); }
+                if (!confirm(`Importar ${data.certificates.length} certificados? Isso substituirá os dados atuais.`)) return;
+                certificates = data.movies;
+                nextId = data.nextId || certificates.length + 1;
+                if (saveCertificatesToStorage()) { refresh(); showToast(`${certificates.length} certificados importados!`); }
             } catch { showToast('Erro ao importar arquivo.', 'error'); }
         };
         reader.readAsText(file);
@@ -1626,7 +1626,7 @@
         if (!confirm('ATENÇÃO: Isso vai remover TODOS os certificados. Esta ação não pode ser desfeita.')) return;
         if (!confirm('Tem certeza absoluta? Recomendamos exportar seus dados antes.')) return;
         localStorage.removeItem('portfoleo-certificates');
-        movies = []; nextId = 1;
+        certificates = []; nextId = 1;
         initializeDefaultData();
         refresh();
         showToast('Todos os dados foram removidos.');
@@ -1634,7 +1634,7 @@
 
     // ─── INIT ───
     async function init() {
-        await loadMoviesFromStorage();
+        await loadCertificatesFromStorage();
         initTagsInput();
         showHome();
     }
