@@ -68,7 +68,7 @@ O **PortFoleo** é um catálogo pessoal de certificados inspirado na interface d
 
 | Página Inicial | Catálogo | Estatísticas |
 |---|---|---|
-| ![Home](https://i.imgur.com/placeholder1.png) | ![Catalog](https://i.imgur.com/placeholder2.png) | ![Stats](https://i.imgur.com/placeholder3.png) |
+| ![Home](img/inicio.jpeg) | ![Catalog](img/adicionar.jpeg) | ![Stats](img/estatisticas.jpeg) |
 
 ---
 
