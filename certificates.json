@@ -1594,7 +1594,18 @@
       "image": "certificados/146.webp",
       "description": "carga horária de 30 horas.",
       "featured": true
+    },
+    {
+      "id": 146,
+      "title": "Excel Básico",
+      "director": "SENAI",
+      "year": "2026-02-26",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/146.webp",
+      "description": "carga horária de 20 horas.",
+      "featured": true
     }
   ],
-  "nextId": 146
+  "nextId": 147
 }
