@@ -1583,7 +1583,18 @@
       "image": "certificados/145.webp",
       "description": "",
       "featured": true
+    },
+    {
+      "id": 145,
+      "title": "Fundamentos de Python 1",
+      "director": "SENAI",
+      "year": "2026-02-25",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/146.webp",
+      "description": "carga horária de 30 horas.",
+      "featured": true
     }
   ],
-  "nextId": 145
+  "nextId": 146
 }
