@@ -1605,7 +1605,18 @@
       "image": "certificados/147.webp",
       "description": "carga horária de 20 horas.",
       "featured": true
+    },
+    {
+      "id": 147,
+      "title": "Conflitos de Interesses (COI)",
+      "director": "EMBRAER",
+      "year": "2026-03-30",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/148.webp",
+      "description": "carga horária de 0,5 horas.",
+      "featured": true
     }
   ],
-  "nextId": 147
+  "nextId": 148
 }
