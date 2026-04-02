@@ -1615,8 +1615,30 @@
       "genres": [],
       "image": "certificados/148.webp",
       "description": "carga horária de 0,5 horas.",
-      "featured": true
+      "featured": false
+    },
+    {
+      "id": 148,
+      "title": "Privacidade e Proteção de Dados Pessoais",
+      "director": "EMBRAER",
+      "year": "2026-03-30",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/149.webp",
+      "description": "carga horária de 0,3 horas.",
+      "featured": false
+    },
+    {
+      "id": 149,
+      "title": "Manuseio e Classificação da Infromação",
+      "director": "EMBRAER",
+      "year": "2026-03-30",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/150.webp",
+      "description": "carga horária de 0,5 horas.",
+      "featured": false
     }
   ],
-  "nextId": 148
+  "nextId": 150
 }
