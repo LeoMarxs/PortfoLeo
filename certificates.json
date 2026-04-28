@@ -1671,7 +1671,18 @@
       "image": "certificados/153.webp",
       "description": "carga horária de - horas.",
       "featured": false
+    },
+    {
+      "id": 153,
+      "title": "Estruturando seu HTML + Formatações",
+      "director": "Digital Innovation One (DIO)",
+      "year": "2026-04-27",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/154.webp",
+      "description": "carga horária de 2 horas.",
+      "featured": false
     }
   ],
-  "nextId": 153
+  "nextId": 154
 }
