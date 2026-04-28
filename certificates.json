@@ -1608,26 +1608,70 @@
     },
     {
       "id": 147,
-      "title": "Java Formacao Basica",
+      "title": "Conflitos de Interesses (COI)",
+      "director": "EMBRAER",
+      "year": "2026-03-30",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/148.webp",
+      "description": "carga horária de 0,5 horas.",
+      "featured": false
+    },
+    {
+      "id": 148,
+      "title": "Privacidade e Proteção de Dados Pessoais",
+      "director": "EMBRAER",
+      "year": "2026-03-30",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/149.webp",
+      "description": "carga horária de 0,3 horas.",
+      "featured": false
+    },
+    {
+      "id": 149,
+      "title": "Manuseio e Classificação da Infromação",
+      "director": "EMBRAER",
+      "year": "2026-03-30",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/150.webp",
+      "description": "carga horária de 0,5 horas.",
+      "featured": false
+    },
+    {
+      "id": 150,
+      "title": "Java Formação Basica",
       "director": "Linkedin Learning",
       "year": "2026-04-27",
       "tags": [],
       "genres": [],
-      "image": "certificados/148.webp",
+      "image": "certificados/151.webp",
       "description": "carga horária de 2 horas.",
-      "featured": true
+      "featured": false
     },
     {
-      "id": 148,
-      "title": "Solucoes de IA no GitHub Primeiros Passos no Codespaces",
+      "id": 151,
+      "title": "Soluções de IA no GitHub Primeiros Passos no Codespaces",
       "director": "Linkedin Learning",
       "year": "2026-04-22",
       "tags": [],
       "genres": [],
-      "image": "certificados/149.webp",
-      "description": "carga horária de - hora.",
-      "featured": true
+      "image": "certificados/152.webp",
+      "description": "carga horária de - horas.",
+      "featured": false
+    },
+    {
+      "id": 152,
+      "title": "Desafio de Ideias ON",
+      "director": "SENAI",
+      "year": "2025-10-10",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/153.webp",
+      "description": "carga horária de - horas.",
+      "featured": false
     }
   ],
-  "nextId": 150
+  "nextId": 153
 }
