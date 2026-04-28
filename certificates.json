@@ -1638,7 +1638,29 @@
       "image": "certificados/150.webp",
       "description": "carga horária de 0,5 horas.",
       "featured": false
+    },
+    {
+      "id": 150,
+      "title": "Java Formação Basica",
+      "director": "Linkedin Learning",
+      "year": "2026-04-27",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/151.webp",
+      "description": "carga horária de 2 horas.",
+      "featured": false
+    },
+    {
+      "id": 151,
+      "title": "Soluções de IA no GitHub Primeiros Passos no Codespaces",
+      "director": "Linkedin Learning",
+      "year": "2026-04-22",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/151.webp",
+      "description": "carga horária de - horas.",
+      "featured": false
     }
   ],
-  "nextId": 150
+  "nextId": 152
 }
