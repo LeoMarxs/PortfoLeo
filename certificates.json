@@ -1660,7 +1660,18 @@
       "image": "certificados/152.webp",
       "description": "carga horária de - horas.",
       "featured": false
+    },
+    {
+      "id": 152,
+      "title": "Desafio de Ideias ON",
+      "director": "Senai",
+      "year": "2025-10-10",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/153.webp",
+      "description": "carga horária de - horas.",
+      "featured": false
     }
   ],
-  "nextId": 152
+  "nextId": 153
 }
