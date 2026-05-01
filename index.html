@@ -720,6 +720,42 @@
             font-size: 0.9rem;
         }
         .json-loading i { color: var(--red); margin-right: 0.5rem; }
+
+        /* --- ADIÇÃO PARA O CARROSSEL --- */
+        .hero-flex-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-text-container {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero-carousel-container {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+            background: var(--surface);
+        }
+
+        .hero-carousel-container .carousel-item img {
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 991px) {
+            .hero-flex-wrapper { justify-content: center; text-align: center; }
+            .hero-carousel-container { margin-top: 2rem; max-width: 100%; }
+        }
     </style>
 </head>
 <body>
@@ -778,15 +814,36 @@
 
 <!-- ─── HOME PAGE ─── -->
 <div id="homePage">
-    <div class="hero-section">
-        <div class="container hero-content">
-            <h1 class="hero-title">Port<span>Foleo</span></h1>
-            <p class="hero-subtitle mb-4">Sua coleção de certificados, organizada com estilo.</p>
-            <button class="btn-hero" onclick="showCatalog()">
-                Explorar Catálogo <i class="fas fa-arrow-right ms-2"></i>
-            </button>
+<div class="hero-section">
+    <div class="container hero-content">
+        <div class="hero-flex-wrapper">
+            <div class="hero-text-container">
+                <h1 class="hero-title">Port<span>Foleo</span></h1>
+                <p class="hero-subtitle mb-4">Sua coleção de certificados, organizada com estilo.</p>
+                <button class="btn-hero" onclick="showCatalog()">
+                    Explorar Catálogo <i class="fas fa-arrow-right ms-2"></i>
+                </button>
+            </div>
+
+            <div class="hero-carousel-container">
+                <div id="certHeroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://images.unsplash.com/photo-1523240715181-310f9324cb7c?w=600" class="d-block w-100" alt="Certificado">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600" class="d-block w-100" alt="Certificado">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" class="d-block w-100" alt="Certificado">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+    
 
     <div class="container">
         <div id="storageWarning" class="storage-warning" style="display:none;">
