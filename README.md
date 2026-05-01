@@ -31,12 +31,12 @@ O **PortFoleo** é um catálogo pessoal de certificados inspirado na interface d
 - **Cards de estatísticas** com total de certificados, instituições, tags e anos
 - Seção de **Destaques** com os certificados marcados como favoritos
 
-### 📂 Catálogo
-- Grid responsivo com todos os certificados
+### 📂 Catálogoos
+- Grid responsivo com todos os certificad
 - **Busca em tempo real** por nome, instituição ou descrição
 - **Filtro por tags** (ex: Python, Back-end, IA, DevOps...)
 - Ordenação por data (mais recente/antigo) ou nome (A-Z / Z-A)
-- Paginação configurável (9, 12, 18 ou 24 por página)
+- Paginação configurável (8, 12, 20 ou 28 por página)
 
 ### 📊 Estatísticas
 - Gráfico de barras por **Instituição**
