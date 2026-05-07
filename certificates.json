@@ -1715,7 +1715,18 @@
       "image": "certificados/157.webp",
       "description": "carga horária de 1 horas.",
       "featured": false
+    },
+    {
+      "id": 157,
+      "title": "Privacidade e Proteção de Dados Pessoais (Geral)",
+      "director": "EMBRAER",
+      "year": "2026-05-07",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/158.webp",
+      "description": "carga horária de 0,3 horas.",
+      "featured": false
     }
   ],
-  "nextId": 157
+  "nextId": 158
 }
