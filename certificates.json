@@ -1693,7 +1693,29 @@
       "image": "certificados/155.webp",
       "description": "carga horária de 2 horas.",
       "featured": false
+    },
+    {
+      "id": 155,
+      "title": "Melhores Práticas de Prototipação Rápida Para Desenvolvimento de Software",
+      "director": "Linkedin Learning",
+      "year": "2026-05-06",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/156.webp",
+      "description": "carga horária de 1 hora.",
+      "featured": false
+    },
+    {
+      "id": 156,
+      "title": "Fundamentos das Boas Práticas em CSS",
+      "director": "Linkedin Learning",
+      "year": "2026-05-07",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/157.webp",
+      "description": "carga horária de 1 horas.",
+      "featured": false
     }
   ],
-  "nextId": 155
+  "nextId": 157
 }
