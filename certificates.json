@@ -1726,7 +1726,150 @@
       "image": "certificados/158.webp",
       "description": "carga horária de 0,3 horas.",
       "featured": false
+    },
+    {
+      "id": 158,
+      "title": "Competência Transversal - Finanças Pessoais",
+      "director": "SENAI",
+      "year": "2021-04-13",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/159.webp",
+      "description": "carga horária de 14 horas.",
+      "featured": false
+    },
+    {
+      "id": 159,
+      "title": "Competência Transversal - Fundamentos de Logística",
+      "director": "SENAI",
+      "year": "2021-04-05",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/160.webp",
+      "description": "carga horária de 14 horas.",
+      "featured": false
+    },
+    {
+      "id": 160,
+      "title": "Competência Transversal - Segurança do Trabalho",
+      "director": "SENAI",
+      "year": "2021-09-06",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/161.webp",
+      "description": "carga horária de 14 horas.",
+      "featured": false
+    },
+    {
+      "id": 161,
+      "title": "Desmitificando a Indústria 4.0",
+      "director": "SENAI",
+      "year": "2022-11-24",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/162.webp",
+      "description": "carga horária de 4 horas.",
+      "featured": false
+    },
+    {
+      "id": 162,
+      "title": "Desvendando a Descarbonização",
+      "director": "SENAI",
+      "year": "2025-06-11",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/163.webp",
+      "description": "carga horária de 20 horas.",
+      "featured": false
+    },
+    {
+      "id": 163,
+      "title": "Desvendando a Indústria 4.0",
+      "director": "SENAI",
+      "year": "2022-11-25",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/164.webp",
+      "description": "carga horária de 20 horas.",
+      "featured": false
+    },
+    {
+      "id": 164,
+      "title": "Desvendando o 5G",
+      "director": "SENAI",
+      "year": "2022-05-20",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/165.webp",
+      "description": "carga horária de 15 horas.",
+      "featured": false
+    },
+    {
+      "id": 165,
+      "title": "Desvendando o ESG",
+      "director": "SENAI",
+      "year": "2025-12-17",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/166.webp",
+      "description": "carga horária de 20 horas.",
+      "featured": false
+    },
+    {
+      "id": 166,
+      "title": "Ecodesign e Modelos de Projetos na Economia Circular",
+      "director": "SENAI",
+      "year": "2025-12-13",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/167.webp",
+      "description": "carga horária de 20 horas.",
+      "featured": false
+    },
+    {
+      "id": 167,
+      "title": "Economia Circular",
+      "director": "SENAI",
+      "year": "2021-03-30",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/168.webp",
+      "description": "carga horária de 20 horas.",
+      "featured": false
+    },
+    {
+      "id": 168,
+      "title": "Ética na Inteliência Artificial",
+      "director": "SENAI",
+      "year": "2024-10-10",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/169.webp",
+      "description": "carga horária de 4 horas.",
+      "featured": false
+    },
+    {
+      "id": 169,
+      "title": "Mecânico de Manutenção",
+      "director": "SENAI",
+      "year": "2022-12-16",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/170.webp",
+      "description": "carga horária de 1600 horas.",
+      "featured": false
+    },
+    {
+      "id": 170,
+      "title": "Sistema de Pintura Airless",
+      "director": "SENAI",
+      "year": "2022-12-16",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/171.webp",
+      "description": "carga horária de 20 horas.",
+      "featured": false
     }
   ],
-  "nextId": 158
+  "nextId": 171
 }
