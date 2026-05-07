@@ -1682,7 +1682,18 @@
       "image": "certificados/154.webp",
       "description": "carga horária de 2 horas.",
       "featured": false
+    },
+    {
+      "id": 154,
+      "title": "Técnicas Avançadas de Java",
+      "director": "Linkedin Learning",
+      "year": "2026-05-06",
+      "tags": [],
+      "genres": [],
+      "image": "certificados/155.webp",
+      "description": "carga horária de 2 horas.",
+      "featured": false
     }
   ],
-  "nextId": 154
+  "nextId": 155
 }
